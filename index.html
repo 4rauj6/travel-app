@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>viagens.com</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <nav class="navbar">
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#porque-nos-escolher">Por que nos escolher</a></li>
+            <li><a href="#porque-nos-escolher">Por que escolher-nos</a></li>
             <li><a href="#locais-para-conhecer">Locais para conhecer</a></li>
         </ul>
     </nav>
@@ -22,6 +24,7 @@
     </section>
 
     <div class="searchBox">
+        <i class="fa fa-search"></i>
         <input type="text" placeholder="Procure por um destino...">
     </div>
 
@@ -55,19 +58,25 @@
 
         .navbar a{
             text-decoration: none;
-            color: rgb(0, 0, 0);
+            color: rgb(255, 166, 0);
         }
 
         .navbar a:hover{
-            font-weight: 500;
-            transition: 0.2s ease-in-out;
+            font-weight: 700;
         }
 
         .searchBox{
+            position: relative;
             display: flex;
             justify-content: flex-start;
             align-content: center;
             padding: 0 5%;
+        }
+
+        .searchBox i{
+            position: absolute;
+            top: 10px;
+            right: 66%;
         }
 
         .searchBox input, ::placeholder{
@@ -93,6 +102,29 @@
 
         .boxText p {
             margin: 15px 0 0 0;        
+        }
+
+        @media screen and (max-width: 430px) {
+            .searchBox{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .searchBox i{
+                position: absolute;
+                top: 10px;
+                right: 10%;
+            }
+
+            .searchBox input, ::placeholder{
+                background-color: white;
+                color: orange;
+                padding: 10px 200px 10px 10px;
+                border-radius: 10px;
+            }
+
         }
     </style>
 </body>
