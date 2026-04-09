@@ -8,3 +8,31 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: aliceblue;
 }
+
+a, li{
+    text-decoration: none;
+    list-style-type: none;
+    color: rgb(255, 151, 14);
+}
+
+.navbar{
+    background-color: white;
+    padding: 1%;
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 35px;
+    padding: 0 1%;
+}
+
+.navbar a:hover {
+    color: rgb(132, 86, 3);
+    transition: 0.4s ease-in-out;
+}
+
+
