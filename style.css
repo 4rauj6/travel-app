@@ -47,13 +47,15 @@ a, li{
    display: flex;
    justify-self: center;
    align-items: center;
+   font-size: 3em;
 }
 
 .homepage-text h3{
     position: absolute;
-    top: 25%;
+    top: 27%;
     display: flex;
     justify-self: center;
     align-items: center;
+    font-size: 1.5em;
  }
 
