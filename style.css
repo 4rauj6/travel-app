@@ -1,28 +1,33 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: aliceblue;
+html {
+    scroll-behavior: smooth;
 }
 
-a, li{
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(230, 230, 230);
+}
+
+a,
+li {
     text-decoration: none;
     list-style-type: none;
     color: rgb(255, 151, 14);
 }
 
-.navbar{
+.navbar {
     background-color: white;
     padding: 1%;
     position: sticky;
     top: 0;
 }
 
-.navbar ul{
+.navbar ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -32,30 +37,145 @@ a, li{
 
 .navbar a:hover {
     color: rgb(132, 86, 3);
-    transition: 0.4s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
-.homepage-image img{
+.homepage-image img {
     position: relative;
     width: 100%;
     height: auto;
 }
 
-.homepage-text h1{
-   position: absolute;
-   top: 20%;
-   display: flex;
-   justify-self: center;
-   align-items: center;
-   font-size: 3em;
-}
-
-.homepage-text h3{
+.homepage-text h1 {
     position: absolute;
-    top: 27%;
+    top: 20%;
     display: flex;
     justify-self: center;
     align-items: center;
-    font-size: 1.5em;
- }
+    font-size: 6em;
+    font-family: "Ephesis", cursive;
+    font-weight: 100;
+    color: orange;
+}
 
+.fa.fa-plane {
+    margin-left: 10px;
+    font-size: 0.8em;
+    color: orange;
+}
+
+.homepage-text h2 {
+    position: absolute;
+    top: 30%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    font-size: 2em;
+    color: orange;
+    font-weight: 300;
+}
+
+.homepage-text h3 {
+    position: absolute;
+    top: 35%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    font-size: 1.3em;
+    color: orange;
+    font-weight: 200;
+}
+
+.button-homepage {
+    position: absolute;
+    top: 40%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.button-homepage button {
+    padding: 10px 40px;
+    font-size: 1.2em;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button-homepage button:hover {
+    background-color: rgb(202, 133, 5);
+    transition: 0.3s ease-in-out;
+}
+
+.locais-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4%;
+}
+
+.locais-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.locais-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.locais-card:hover {
+    transition: transform 0.3s ease;
+    transform: translateY(-5px);
+    background-color: rgb(236, 236, 236);
+}
+
+.locais-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1px;
+}
+
+.locais-img img:hover {
+    transition: 0.3s ease-in-out;
+    transform: color(0.5) black;
+}
+
+.locais-card h2 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.locais-card p {
+    color: orange;
+    font-size: 0.90rem;
+    line-height: 1.5;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.info-adicionais {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: flex-start;
+    flex-direction: column;
+    line-height: 10px;
+}
