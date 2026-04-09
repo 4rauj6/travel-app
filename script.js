@@ -10,3 +10,8 @@ function showSidebar(){
         iconForBtn.classList.replace("fa-close", "fa-bars");
     }
 }
+
+function showMore() {
+    const gotToHomeDiv = document.getElementById('locais-mais-escolhidos');
+    gotToHomeDiv.scrollIntoView({ behavior: 'smooth' });
+}
