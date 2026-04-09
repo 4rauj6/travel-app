@@ -35,4 +35,25 @@ a, li{
     transition: 0.4s ease-in-out;
 }
 
+.homepage-image img{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.homepage-text h1{
+   position: absolute;
+   top: 20%;
+   display: flex;
+   justify-self: center;
+   align-items: center;
+}
+
+.homepage-text h3{
+    position: absolute;
+    top: 25%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+ }
 
