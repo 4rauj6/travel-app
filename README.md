@@ -1,5 +1,5 @@
 # travel-app
-A travel APP/WebSite developped by João Victor "4rauj6" Araújo.
+A travel APP/WebSite developped by João Victor "4rauj6" Araújo. Featuring William "williamzim" Davisson and Alan Kauê.
 
 # NEWEST UPDATES
 <ul>
