@@ -19,4 +19,4 @@ A travel APP/WebSite developped by João Victor "4rauj6" Araújo.
 <p>This aplication is a <strong>POC (Proof of concept)</strong> witch means it doesn't has any profiteble goals. It only exists as a personal project to the author's personal portifolio.</p>
 
 <strong><p>Assets used in this aplicaation</p></strong>
-<p>As you can see in the Assets folder, this aplication has utilized </p>
+<p>As you can see in the "Assets" folder, this aplication has utilized third-party resources provided by royalty-free image websites, like Freepik (https://www.freepik.com/log-in?client_id=freepik&lang=en&cb_url=https%3A%2F%2Fwww.freepik.com%2Fhome-auth)</p>
