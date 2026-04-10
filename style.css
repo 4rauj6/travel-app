@@ -27,6 +27,13 @@ li {
     top: 0;
 }
 
+.menu-mobile {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: rgb(255, 151, 14);
+}
+
 .navbar ul {
     display: flex;
     justify-content: flex-end;
@@ -141,7 +148,7 @@ li {
 
 .locais-card:hover {
     transition: transform 0.3s ease;
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     background-color: rgb(236, 236, 236);
 }
 
@@ -151,11 +158,6 @@ li {
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 1px;
-}
-
-.locais-img img:hover {
-    transition: 0.3s ease-in-out;
-    transform: color(0.5) black;
 }
 
 .locais-card h2 {
@@ -233,4 +235,84 @@ li {
 
 .locais-info h2 {
     line-height: 5vh;
+}
+
+@media (max-width: 768px) {
+
+    .button-homepage,
+    .homepage-text h2 {
+        display: none !important;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .menu-mobile {
+        display: block;
+        margin-left: auto;
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 20px;
+        gap: 20px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .homepage-image {
+        position: static !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .homepage-image img {
+        position: static !important;
+        width: 45% !important;
+        height: auto !important;
+        border-radius: 8px;
+    }
+
+    .homepage-text {
+        position: static !important;
+        width: 50% !important;
+        text-align: right;
+        padding: 0;
+    }
+
+    .homepage-text h1 {
+        position: static !important;
+        font-size: 1.8em !important;
+        margin-bottom: 5px;
+        display: block !important;
+    }
+
+    .homepage-text h3 {
+        position: static !important;
+        font-size: 0.9em !important;
+        color: #666;
+        display: block !important;
+    }
 }
