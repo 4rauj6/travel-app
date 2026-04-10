@@ -4,6 +4,7 @@ A travel APP/WebSite developped by João Victor "4rauj6" Araújo.
 # NEWEST UPDATES
 <ul>
   <li><p>(10/04/2026) - Enhanced CSS styles and add new sections to HTML file</p></li>
+  <li><p>(10/04/2026) - Places descripton TXT files has been added</p></li>
 </ul>
 
 # CHANGELOG
