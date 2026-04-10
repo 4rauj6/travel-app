@@ -6,6 +6,7 @@ A travel APP/WebSite developped by João Victor "4rauj6" Araújo.
   <li><p>(10/04/2026) - Enhanced CSS styles and add new sections to HTML file</p></li>
   <li><p>(10/04/2026) - Places descripton TXT files has been added</p></li>
   <li><p>(10/04/2026) - New JavaScript functions has been added</p></li>
+  <li><p>(10/04/2026) - The index.html and the style.css files has ben improved</p></li>
 </ul>
 
 # CHANGELOG
@@ -16,6 +17,7 @@ A travel APP/WebSite developped by João Victor "4rauj6" Araújo.
   <li><p>(10/04/2026) - Enhanced CSS styles and add new sections to HTML file</p></li>
   <li><p>(10/04/2026) - Places descripton TXT files has been added</p></li>
   <li><p>(10/04/2026) - New JavaScript functions has been added</p></li>
+  <li><p>(10/04/2026) - The index.html and the style.css files has ben improved</p></li>
 </ul>
 
 # DISCLAIMER
