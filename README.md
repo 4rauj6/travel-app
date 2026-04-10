@@ -15,5 +15,5 @@ A travel APP/WebSite developped by João Victor "4rauj6" Araújo.
 
 # DISCLAIMER
 
-<strong><p style: font-size:5em>About the aplication</p></strong>
+<strong><p font-size="4">About the aplication</p></strong>
 <p>This aplication is a <strong>POC (Proof of concept)</strong> witch means it doesn't has any profiteble goals. It only exists as a personal project to the author's personal portifolio.</p>
