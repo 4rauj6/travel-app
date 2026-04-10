@@ -179,3 +179,53 @@ li {
     flex-direction: column;
     line-height: 10px;
 }
+
+.locais-main-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    padding: 15px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.locais-descobrir-card {
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.paises-card-img img {
+    width: 94%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1px;
+    margin-right: 30px;
+}
+
+.titulo-section-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.locais-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.locais-info h2 {
+    line-height: 5vh;
+}
