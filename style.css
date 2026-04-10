@@ -212,6 +212,11 @@ li {
     margin-right: 30px;
 }
 
+.paises-card-img img:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.03);
+}
+
 .titulo-section-2 {
     display: flex;
     justify-content: center;
