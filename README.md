@@ -19,10 +19,16 @@ A travel APP/WebSite developped by João Victor "4rauj6" Araújo. Featuring Will
 [10/04/2026]
 
 <ul>
-  <li><p>(10/04/2026) - Enhanced CSS styles and add new sections to HTML file</p></li>
-  <li><p>(10/04/2026) - Places descripton TXT files has been added</p></li>
-  <li><p>(10/04/2026) - New JavaScript functions has been added</p></li>
-  <li><p>(10/04/2026) - The index.html and the style.css files has ben improved</p></li>
+  <li><p>Enhanced CSS styles and add new sections to HTML file</p></li>
+  <li><p>Places descripton TXT files has been added</p></li>
+  <li><p>New JavaScript functions has been added</p></li>
+  <li><p>(The index.html and the style.css files has ben improved</p></li>
+</ul>
+
+[13/04/2026]
+
+<ul>
+  <li><p>Sidebar and Grid display's it's now responsives to mobile devices</p></li>
 </ul>
 
 # DISCLAIMER
