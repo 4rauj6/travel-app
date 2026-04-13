@@ -316,3 +316,37 @@ li {
         display: block !important;
     }
 }
+
+.sorteio {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.sorteio-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.botoes-sorteio button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background: orange;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botoes-sorteio button:hover {
+    background: rgb(202, 133, 5);
+}
