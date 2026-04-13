@@ -135,7 +135,7 @@ li {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 34px;
     padding: 20px;
     width: 100%;
     max-width: 1200px;
@@ -195,7 +195,7 @@ li {
     gap: 20px;
     padding: 15px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1190px;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -205,6 +205,7 @@ li {
     grid-template-columns: 60% 1fr;
     background-color: white;
     border-radius: 10px;
+    width: 100%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
@@ -252,7 +253,7 @@ li {
     background: white;
     padding: 20px;
     border-radius: 10px;
-    max-width: 1165px;
+    max-width: 1160px;
     margin: 0 auto;
 }
 
