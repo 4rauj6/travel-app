@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header>
+<header>
         <nav class="navbar">
             <div class="menu-mobile" onclick="toggleMenu()">
                 <i class="fa fa-bars"></i>
@@ -27,6 +27,7 @@
                 <li><a href="#locais-mais-escolhidos">Locais</a></li>
                 <li><a href="#locais-para-descobrir">Descobrir</a></li>
                 <li><a href="sobre-o-site">Sobre</a></li>
+                <li><a href="#sorteio">Sorteio</a></li>
             </ul>
         </nav>
     </header>
@@ -189,6 +190,32 @@
     <section class="paises-mais-escolhidos">
 
     </section>
+
+
+<section class="sorteio" id="sorteio">
+    <h1 class="titulo-section">🎲 Sorteador de Países</h1>
+
+    <div class="sorteio-container">
+
+        <h3>Escolha os países:</h3>
+
+        <div class="checkboxes">
+            <label><input type="checkbox" value="França"> França</label>
+            <label><input type="checkbox" value="Brasil"> Brasil</label>
+            <label><input type="checkbox" value="Japão"> Japão</label>
+            <label><input type="checkbox" value="Itália"> Itália</label>
+            <label><input type="checkbox" value="Alemanha"> Alemanha</label>
+            <label><input type="checkbox" value="Espanha"> Espanha</label>
+        </div>
+
+        <div class="botoes-sorteio">
+            <button onclick="sortearSelecionados()">Sortear selecionados</button>
+            <button onclick="sortearTodos()">Sortear todos</button>
+        </div>
+
+        <h2 id="resultado-sorteio"></h2>
+    </div>
+</section>
 
     <section class="sobre">
 
