@@ -246,7 +246,7 @@ li {
 
     .button-homepage,
     .homepage-text h2 {
-        display: none !important;
+        display: none ;
     }
     
     .sidebar {
@@ -271,7 +271,16 @@ li {
       align-items: flex-end;
     }
     
-  
+    .sidebar a{
+        margin-right: 51px;
+    }
+
+    .sidebar button{
+        display: block;
+        margin-top: 1%;
+        font-size: 1.6em;
+        align-items: flex-start;
+    }
 
     .navbar {
         display: none;
@@ -284,40 +293,71 @@ li {
     }
 
     .homepage-image {
-      
+      height: 70vh;
     }
-}
 
-.sorteio {
-    margin-top: 50px;
-    text-align: center;
-}
+    .homepage-image img{
+        width: 100%;
+        height: 180%;
+        object-fit: cover;
+    }
 
-.sorteio-container {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 500px;
-    margin: 0 auto;
-}
+    .homepage .homepage-text{
+        font-size: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 
-.checkboxes {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 20px 0;
-}
+    .homepage-text h1{
+        line-height: 200px;
+        color: white;
+    }
 
-.botoes-sorteio button {
-    margin: 10px;
-    padding: 10px 20px;
-    border: none;
-    background: orange;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
+    .homepage-text h3{
+        color: white;
+    }
 
-.botoes-sorteio button:hover {
-    background: rgb(202, 133, 5);
+    .homepage-text .fa.fa-plane{
+        font-size: 30px;
+    }
+
+    .sorteio {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .sorteio-container {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .checkboxes {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 20px 0;
+    }
+
+    .botoes-sorteio button {
+        margin: 10px;
+        padding: 10px 20px;
+        border: none;
+        background: orange;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .botoes-sorteio button:hover {
+        background: rgb(202, 133, 5);
+    }
+
+    .locais-page{
+        margin-top: 70vh;
+    }
 }
