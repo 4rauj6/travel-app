@@ -268,18 +268,13 @@ li {
       display: block;
       margin-top: 1%;
       font-size: 1.5em;
-      align-items: flex-end;
+      align-items: flex-start;
+        background-color: transparent;
+        border: none;
     }
     
     .sidebar a{
         margin-right: 51px;
-    }
-
-    .sidebar button{
-        display: block;
-        margin-top: 1%;
-        font-size: 1.6em;
-        align-items: flex-start;
     }
 
     .navbar {
