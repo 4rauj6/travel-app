@@ -300,13 +300,6 @@ li {
         z-index: 999;
     }
 
-    .sidebar button {
-        display: block;
-        margin-top: 1%;
-        font-size: 1.5em;
-        align-items: flex-end;
-    }
-
     .sidebar a {
         margin-right: 51px;
     }
