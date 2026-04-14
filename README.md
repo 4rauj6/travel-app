@@ -4,6 +4,9 @@ A travel APP/WebSite developped by João Victor "4rauj6" Araújo. Featuring Will
 # NEWEST UPDATES
 <ul>
   <li><p>(13/04/2026) - The program it's now responsive to mobile devices</p></li>
+  <li>
+    <p>(14/06/2026) - Footer sections has been added</p>
+  </li>
 </ul>
 
 # CHANGELOG
