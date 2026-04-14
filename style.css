@@ -399,7 +399,7 @@ li {
         grid-template-columns: 1fr;
         padding: 10px;
         gap: 15px;
-        max-width: 88%;
+        max-width: 90%;
     }
 
     .locais-img img {
