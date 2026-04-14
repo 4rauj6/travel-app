@@ -13,23 +13,23 @@ A travel APP/WebSite developped by João Victor "4rauj6" Araújo. Featuring Will
 [01/04/2026]
 
 <ul>
-  <li><p>Starts to the develop the concecpt of the aplication</p></li>
+  <li><p>Starts to the develop the concecpt of the aplication.</p></li>
 </ul>
 
 [10/04/2026]
 
 <ul>
   <li>
-    <p>Enhanced CSS styles and add new sections to HTML file</p>
+    <p>Enhanced CSS styles and add new sections to HTML file.</p>
   </li>
   <li>
-    <p>Places descripton TXT files has been added</p>
+    <p>Places descripton TXT files has been added.</p>
   </li>
   <li>
-    <p>New JavaScript functions has been added</p>
+    <p>New JavaScript functions has been added.</p>
   </li>
   <li>
-    <p>The index.html and the style.css files has ben improved</p>
+    <p>The index.html and the style.css files has ben improved.</p>
   </li>
 </ul>
 
@@ -37,17 +37,19 @@ A travel APP/WebSite developped by João Victor "4rauj6" Araújo. Featuring Will
 
 <ul>
   <li>
-    <p>Sidebar and Grid display's it's now way better responsive to mobile devices screens</p>
+    <p>Sidebar and Grid display's it's now way better responsive to mobile devices screens.</p>
   </li>
   <li>
-    <p>Footer sections has starts to getting made</p>
+    <p>Footer sections has starts to getting made.</p>
   </li>
 </ul>
 
 [14/04/2026]
 
 <ul>
-  <li></li>
+  <li>
+    <p>Footer style has been improved.</p>
+  </li>
 </ul>
 
 # DISCLAIMER
