@@ -3,10 +3,7 @@ A travel APP/WebSite developped by João Victor "4rauj6" Araújo. Featuring Will
 
 # NEWEST UPDATES
 <ul>
-  <li><p>(13/04/2026) - The progrram it's now responsive to mobile devices</p></li>
-  <li><p>(10/04/2026) - Places descripton TXT files has been added</p></li>
-  <li><p>(10/04/2026) - New JavaScript functions has been added</p></li>
-  <li><p>(10/04/2026) - The index.html and the style.css files has ben improved</p></li>
+  <li><p>(13/04/2026) - The program it's now responsive to mobile devices</p></li>
 </ul>
 
 # CHANGELOG
