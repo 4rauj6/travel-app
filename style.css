@@ -24,6 +24,10 @@ li {
     display: none;
 }
 
+.sidebar ul {
+    display: none;
+}
+
 .navbar {
     background-color: white;
     padding: 1%;
@@ -163,7 +167,7 @@ li {
 }
 
 .locais-card p {
-    color: orange;
+    color: rgb(0, 0, 0);
     font-size: 0.90rem;
     line-height: 1.5;
     width: 100%;
@@ -177,6 +181,12 @@ li {
     align-items: flex-start;
     flex-direction: column;
     line-height: 10px;
+    color: black;
+}
+
+.info-adicionais strong {
+    color: orange;
+    font-size: 0.9em;
 }
 
 .locais-main-container {
@@ -230,13 +240,27 @@ li {
 
 .locais-info {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
 }
 
 .locais-info h2 {
     line-height: 5vh;
+}
+
+.locais-info strong {
+    color: orange;
+}
+
+.locais-description {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+    line-height: 15px;
+    color: black;
 }
 
 .sorteio {
@@ -337,7 +361,7 @@ li {
     }
 
     .homepage-text h1 {
-        line-height: 270px;
+        line-height: 2.6;
         color: white;
     }
 
