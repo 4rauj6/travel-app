@@ -67,7 +67,7 @@ li {
     font-size: 6em;
     font-family: "Ephesis", cursive;
     font-weight: 100;
-    color: orange;
+    color: rgb(255, 255, 255);
 }
 
 .fa.fa-plane {
@@ -83,7 +83,7 @@ li {
     justify-self: center;
     align-items: center;
     font-size: 2em;
-    color: orange;
+    color: rgb(255, 255, 255);
     font-weight: 300;
 }
 
@@ -94,7 +94,7 @@ li {
     justify-self: center;
     align-items: center;
     font-size: 1.3em;
-    color: orange;
+    color: rgb(255, 255, 255);
     font-weight: 200;
 }
 
@@ -127,7 +127,7 @@ li {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 4%;
+    margin-top: 20vh;
 }
 
 .locais-container {
@@ -198,6 +198,10 @@ li {
     max-width: 1190px;
     margin: 0 auto;
     box-sizing: border-box;
+}
+
+.locais-descobrir {
+    margin-top: 20vh;
 }
 
 .locais-descobrir-card {
@@ -363,7 +367,7 @@ li {
         background: white;
         padding: 20px;
         border-radius: 10px;
-        max-width: 400px;
+        max-width: 370px;
         margin: 0 auto;
     }
 
@@ -393,16 +397,21 @@ li {
         margin-top: 70vh;
     }
 
+    .locais-container {
+        max-width: 94%;
+        gap: 10px;
+    }
+
     .locais-main-container {
         grid-template-columns: 1fr;
         padding: 10px;
         gap: 15px;
-        max-width: 95%;
+        max-width: 89%;
     }
-    
-    .locais-img img{
-      width: 93%;
-      height: auto;
+
+    .locais-img img {
+        width: 95%;
+        height: auto;
     }
 
     .locais-descobrir-card {
@@ -414,7 +423,7 @@ li {
     }
 
     .paises-card-img img {
-        width: 100%;
+        width: 90%;
         height: auto;
         max-height: 200px;
         margin-right: 0;
