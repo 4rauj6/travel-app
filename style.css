@@ -399,6 +399,11 @@ li {
         gap: 15px;
         max-width: 95%;
     }
+    
+    .locais-img img{
+      width: 93%;
+      height: auto;
+    }
 
     .locais-descobrir-card {
         padding: 15px;
