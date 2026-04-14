@@ -391,7 +391,7 @@ li {
     }
 
     .locais-container {
-        max-width: 95%;
+        max-width: 93%;
         gap: 10px;
     }
 
@@ -399,11 +399,11 @@ li {
         grid-template-columns: 1fr;
         padding: 10px;
         gap: 15px;
-        max-width: 90%;
+        max-width: 88%;
     }
 
     .locais-img img {
-        width: 95%;
+        width: 90%;
         height: auto;
     }
 
@@ -411,12 +411,12 @@ li {
         padding: 18px;
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: auto;
         text-align: center;
     }
 
     .paises-card-img img {
-        width: 95%;
+        width: 90%;
         height: auto;
         max-height: 300px;
         margin-right: 0;
