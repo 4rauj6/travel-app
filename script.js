@@ -16,7 +16,7 @@ function openSidebar() {
     sidebarMenuButton.classList.toggle('fa-times');
 }
 
-function sortearSelecionados() {
+/*function sortearSelecionados() {
     const checkboxes = document.querySelectorAll('.checkboxes input:checked');
     const selecionados = [];
 
@@ -40,4 +40,4 @@ function sortearTodos() {
     const sorteado = todos[Math.floor(Math.random() * todos.length)];
 
     document.getElementById("resultado-sorteio").innerText = "🌍 Destino: " + sorteado;
-}
+}*/
