@@ -11,7 +11,7 @@ A travel APP/WebSite developped by João Victor "4rauj6" Araújo. Featuring Will
   </li>
 
   <li>
-    <p>(15/06/2026) -The game's logic script has started to be develop</p>
+    <p>(15/06/2026) -The game's logic has started to be develop</p>
   </li>
 </ul>
 
