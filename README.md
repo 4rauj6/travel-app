@@ -4,10 +4,10 @@ A travel APP/WebSite developped by João Victor "4rauj6" Araújo. Featuring Will
 # NEWEST UPDATES
 <ul>
   <li>
-    <p>(15/06/2026) - New Media Queries for Laptops has been added.</p>
+    <p>(15/06/2026) - New Media Queries styles for Laptops has been added.</p>
   </li>
   <li>
-    <p>(15/06/2026) - Quiz game files has been added to the main Branch</p>
+    <p>(15/06/2026) - The quiz game files has been added to the main Branch</p>
   </li>
 </ul>
 
