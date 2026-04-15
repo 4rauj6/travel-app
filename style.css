@@ -56,7 +56,7 @@ li {
 
 .homepage-text h1 {
     position: absolute;
-    top: 20%;
+    top: 23%;
     display: flex;
     justify-self: center;
     align-items: center;
@@ -70,17 +70,6 @@ li {
     margin-left: 10px;
     font-size: 0.8em;
     color: orange;
-}
-
-.homepage-text h2 {
-    position: absolute;
-    top: 30%;
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    font-size: 2em;
-    color: rgb(255, 255, 255);
-    font-weight: 300;
 }
 
 .homepage-text h3 {
@@ -197,7 +186,7 @@ li {
     gap: 20px;
     padding: 15px;
     width: 100%;
-    max-width: 1190px;
+    max-width: 1170px;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -299,6 +288,13 @@ li {
     transition: 0.3s ease-in-out;
 }
 
+@media (min-width: 769px) and (max-width: 1366px) {
+    .homepage-text h1{
+        top: 22%;
+    }
+}
+
+
 @media (max-width: 768px) {
 
     .button-homepage,
@@ -361,7 +357,7 @@ li {
     }
 
     .homepage-text h1 {
-        line-height: 2.6;
+        line-height: 2.2;
         color: white;
     }
 
