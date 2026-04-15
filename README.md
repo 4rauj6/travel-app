@@ -3,9 +3,11 @@ A travel APP/WebSite developped by João Victor "4rauj6" Araújo. Featuring Will
 
 # NEWEST UPDATES
 <ul>
-  <li><p>(13/04/2026) - The program it's now responsive to mobile devices</p></li>
   <li>
-    <p>(14/06/2026) - Footer sections has been added</p>
+    <p>(15/06/2026) - New Media Queries for Laptop devices has been added.</p>
+  </li>
+  <li>
+    <p>(15/06/2026) - Quiz game files has been added to the main Branch</p>
   </li>
 </ul>
 
@@ -49,6 +51,17 @@ A travel APP/WebSite developped by João Victor "4rauj6" Araújo. Featuring Will
 <ul>
   <li>
     <p>Footer style has been improved.</p>
+  </li>
+</ul>
+
+[15/06/2026]
+
+<ul>
+  <li>
+    <p>New Media Queries for Laptop devices has been added.</p>
+  </li>
+  <li>
+    <p>Quiz game files has been added to the main Branch</p>
   </li>
 </ul>
 
