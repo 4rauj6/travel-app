@@ -6,13 +6,6 @@ A travel APP/WebSite developped by João Victor "4rauj6" Araújo. Featuring Will
   <li>
     <p>(15/06/2026) - New Media Queries styles for Laptops has been added.</p>
   </li>
-  <li>
-    <p>(15/06/2026) - The quiz game files has been added to the main Branch</p>
-  </li>
-
-  <li>
-    <p>(15/06/2026) -The game's logic has started to be develop</p>
-  </li>
 </ul>
 
 # CHANGELOG
@@ -63,12 +56,6 @@ A travel APP/WebSite developped by João Victor "4rauj6" Araújo. Featuring Will
 <ul>
   <li>
     <p>New Media Queries for Laptop devices has been added.</p>
-  </li>
-  <li>
-    <p>Quiz game files has been added to the main Branch</p>
-  </li>
-  <li>
-    <p>The game's logic script has started to be develop</p>
   </li>
 </ul>
 
