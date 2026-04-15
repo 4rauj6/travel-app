@@ -107,6 +107,14 @@ li {
     transition: 0.3s ease-in-out;
 }
 
+.titulo-section {
+    color: white;
+}
+
+.titulo-section-2 {
+    color: white;
+}
+
 .locais-page {
     display: flex;
     justify-content: center;
