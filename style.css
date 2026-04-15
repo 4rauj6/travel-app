@@ -186,7 +186,7 @@ li {
     gap: 20px;
     padding: 15px;
     width: 100%;
-    max-width: 1170px;
+    max-width: 1190px;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -292,6 +292,20 @@ li {
     .homepage-text h1{
         top: 22%;
     }
+
+    .locais-main-container {
+        max-width: 1000px;
+    }
+
+    .locais-container {
+        max-width: 900px;
+        gap: 10px;
+    }
+
+    .locais-img img{
+        width: 90%;
+    }
+    
 }
 
 
