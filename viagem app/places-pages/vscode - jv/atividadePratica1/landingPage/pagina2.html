@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2 - landing page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="principalA"><a href="#">Minha Landing page</a></li>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#serviços">Serviços</a></li>
+            <li><a href="#contato">contato</a></li>
+        </ul>
+    </nav>
+
+    <section class="container1">
+        <div class="text">
+            <h1>Bem-vindo a nossa pagina!</h1>
+            <p>uma landing page simples, bonita e responsiva.</p>
+        </div>
+        <button>Fale conoscto</button>
+        <img src="Image (1).svg" alt="imgBackground">
+    </section>
+
+    <sectio class="container2">
+        <h1>Nossos serviços</h1>
+        <div class="gridContainer">
+            <i class="fa fa-rocket" aria-hidden="true"></i>
+            <h2>Desenvolvimento Web</h2>
+            <p>Criamos sites rápidos, responsivos a moderno</p>
+        </div>
+
+        <div class="gridContainer">
+            <i class="fa fa-mobile" aria-hidden="true"></i>
+            <h2>Aplicativos Mobile</h2>
+            <p>Aplicativos intuitivos e funcionais para Android e IOS.</p>
+        </div>
+
+        <div class="gridContainer">
+            <i class="fa fa-paint-brush" aria-hidden="true"></i>
+            <h2>Design Criativo</h2>
+            <p>Layouts modernos e atraentes para destacar sua marca.</p>
+        </div>
+    </sectio>
+
+    <footer>
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <p>contato@minhalanding.com</p>
+
+        <i class="fa fa-phone" aria-hidden="true"></i>
+        <p>(11) 9999-9999</p>
+    </footer>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav{
+            display: flex;
+            justify-content: flex-start;
+            margin: 1%;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: #213933;
+        }
+
+        nav ul{
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 97%;
+            gap: 40px;
+        }
+
+        nav ul li a{
+            font-size: 1.5em;
+        }
+
+        nav ul li:first-child{
+            margin-right: auto;
+        }
+
+        nav li{
+            display: flex;
+        }
+
+        nav ul li a:hover {
+            color: #ee6f14;
+        }
+
+        .container1{
+            position: relative;
+        }
+
+        .container1 img{
+            width: 100%;
+        }
+
+        .container1 h1{
+            position: absolute;
+            left: 23%;
+            bottom: 45%;
+            font-size: 6em;
+            color: #FDF9F2;
+        }
+
+        .container1 p{
+            position: absolute;
+            left: 27%;
+            bottom: 38%;
+            font-size: 3em;
+            color: #FDF9F2;
+        }
+        .container1 button{
+            position: absolute;
+            left: 38%;
+            bottom: 13%;
+            font-size: 3em;
+            padding: 35px 70px;
+            border-radius: 70px;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandeiras Nacionais</title>
+</head>
+<body>
+    <div class="headerSection">
+        <h1 class="h1Text">Selecione um país e descubra mais sobre ele!</h1>
+        <div class="alemanhaImg">
+            <p class="almText"><a href="https://pt.wikipedia.org/wiki/Alemanha">Alemanha</a></p>
+            <a href="https://pt.wikipedia.org/wiki/Alemanha">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/1920px-Flag_of_Germany.svg.png" class="imgAlm">
+            </a>
+        </div>
+
+        <div class="austria">
+            <p class="ausText">
+                <a href="https://pt.wikipedia.org/wiki/%C3%81ustria">Áustria</a>
+            </p>
+            <a href="https://pt.wikipedia.org/wiki/%C3%81ustria">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_Austria.svg/1920px-Flag_of_Austria.svg.png" class="austriaImg">
+            </a>
+        </div>
+
+        <div class="suica">
+            <p class="suiText">
+                <a href="https://pt.wikipedia.org/wiki/Su%C3%A9cia">Suécia</a>
+            </p>
+            <a href="https://pt.wikipedia.org/wiki/Su%C3%A9cia">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Flag_of_Sweden.svg/250px-Flag_of_Sweden.svg.png" class="suiImg">
+            </a>
+        </div>
+    </div>
+
+    <style>
+        .headerSection {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 14em;
+            padding: 300px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .h1Text{
+            position: absolute;
+            top: 18%;
+            color: rgb(0, 0, 0);
+        }
+
+        .almText a{
+            font-size: 250%;
+            color: red;
+        }
+
+        .suiText a{
+            color: rgb(4, 55, 104);
+            font-size: 250%;
+        }
+
+        .ausText a{
+            color: rgba(107, 9, 9, 0.897);
+            font-size: 250%;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .imgAlm, .austriaImg, .suiImg {
+            width: 150px;
+            height: auto;
+            display: block;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .headerSection :hover .imgAlm{
+            transform: scale(1.1);
+        }
+
+        .headerSection :hover .suiImg{
+            transform: scale(1.1);
+        }
+
+        .headerSection :hover .austriaImg{
+            transform: scale(1.1);
+        }
+    </style>
+</body>
+</html>

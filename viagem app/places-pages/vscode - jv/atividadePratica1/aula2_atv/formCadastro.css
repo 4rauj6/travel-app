@@ -1,0 +1,38 @@
+  body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ff8040;;
+            margin: 0;
+        }
+
+        .pergunta{
+            color: #ff8040;
+        }
+
+        .formBody{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #1b1b1b;
+            min-height: 100vh;
+        }
+
+        .formCss{
+            background-color: #272727   ;
+            width: 500px;
+            height: 420px;
+            border-radius: 10px;
+            margin-top: 60px;
+        }
+
+        .formCss input{
+            background-color: #cecece;
+        }
+
+        .formCss input, label, p{
+            margin-left: 40px;
+            border-radius: 6px;
+        }
+
+        .formCss .javascript{
+            margin-left: 0px;
+        }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+
+<script>
+    let valorCompra = 100.00;
+    let codigoDigitado = Number(prompt('Digite seu código: (1) Comum, (2) Funcionário, (3) VIP'));
+    let valorFinal;
+
+    switch (codigoDigitado) {
+        case 1:
+            valorFinal = valorCompra;
+            alert("Cliente comum detectado. Sem desconto aplicado.");
+            break;
+
+        case 2:
+            valorFinal = valorCompra * 0.90;
+            alert("Desconto de Funcionário aplicado (10%).");
+            break;
+
+        case 3:
+            valorFinal = valorCompra * 0.95;
+            alert("Desconto de Cliente VIP aplicado (5%).");
+            break;
+
+        default:
+            valorFinal = valorCompra;
+            alert("Código inválido. Cobrando valor integral.");
+            break;
+    }
+
+    alert(`Total a pagar: R$ ${valorFinal.toFixed(2)}`);
+</script>
+
+</html>
