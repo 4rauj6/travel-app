@@ -142,6 +142,7 @@ li {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
+    cursor: pointer;
 }
 
 .locais-card:hover {
@@ -212,6 +213,7 @@ li {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
+    cursor: pointer;
 }
 
 .paises-card-img img {
@@ -260,8 +262,35 @@ li {
     color: black;
 }
 
-#view-places-page {
-    display: none;
+.barcelona-page .img-banner img{
+    width: 100%;
+    height: 46vh;
+    object-fit: cover;
+    border-radius: 1px;
+    display: block;
+    margin: 0 auto;
+}
+
+.barcelona-page-texts{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    min-height: 320px;
+    padding: 40px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    gap: 20px;
+}
+
+.barcelona-page-texts h1{
+    color: orange;
+}
+
+.barcelona-page-texts p{
+    line-height: 1.7;
 }
 
 @media (min-width: 769px) and (max-width: 1366px) {

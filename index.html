@@ -32,11 +32,11 @@
 
         <nav class="navbar">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#locais-mais-escolhidos">Locais</a></li>
-                <li><a href="#locais-para-descobrir">Descobrir</a></li>
-                <li><a href="sobre-o-site">Sobre</a></li>
-                <li><a href="#sorteio">Sorteio</a></li>
+                <li><a href="#home" onclick="closePages()">Home</a></li>
+                <li><a href="#locais-mais-escolhidos" onclick="closePages()">Locais</a></li>
+                <li><a href="#locais-para-descobrir" onclick="closePages()">Descobrir</a></li>
+                <li><a href="sobre-o-site" onclick="closePages()">Sobre</a></li>
+                <li><a href="#sorteio" onclick="closePages()">Sorteio</a></li>
             </ul>
         </nav>
     </header>
@@ -60,7 +60,7 @@
         </div>
     </section>
 
-    <section class="page locais-page" id="locais-mais-escolhidos">
+    <section class="locais-page" id="locais-mais-escolhidos">
         <h1 class="titulo-section">Locais mais escolhidos</h1>
         <div class="locais-container">
             <div class="locais-card">
@@ -87,7 +87,7 @@
                 </div>
             </div>
 
-            <div class="locais-card">
+            <div class="locais-card" onclick="showTokyoPage()">
                 <div class="locais-img">
                     <img src="assets/209.jpg" alt="">
                 </div>
@@ -175,8 +175,7 @@
 
             </div>
 
-            <a href="../places-pages/barcelona/barcelona-page.html">
-                <div class="locais-descobrir-card">
+                <div class="locais-descobrir-card" onclick="showBarcelonaPage()">
                     <div class="paises-card-img">
                         <img src="assets/17996.jpg" alt="">
                     </div>
@@ -192,7 +191,23 @@
                         </div>
                     </div>
                 </div>
-            </a>
+        </div>
+    </section>
+
+
+    <section class="barcelona-page" style="display: none;">
+        <div class="img-banner">
+            <img src="assets/17852.jpg" alt="">
+        </div>
+        <div class="barcelona-page-texts">
+            <h1>Barcelona, Espanha</h1>
+            <p>A capital da Catalunha e lar do Barcelona FC oferece uma experiência única e inesquecível para os seus visitantes. Sem duvidas, Barcelona encanta os turistas pela sua diversidade  e cores vibrantes, que levam felicade e prazer aos visitantes de todo o mundo. Dentre os principais pontos turisticos da cidade, a visita ao Palau Nacional, ao bairro Gôtico e ao Parque Güell se destacam por serem os destinos favoritos dos turistas. É claro que o local não se reserva apenas a isso, a visita ao estádio do famoso time de futébol, Barcelona FC, que carrega as cores e a bandeira da Catalunha no seu escudo, não poderia ficar de fora. O Camp Nou é um dos maiores estádios do mundo, tendo capacidade para abrigar cerca de 105.000 torcedores (e visitantes) dentro da sua estrutura. A ligação da cidade com o clube é algo quase mística e sem duvidas é um endereço que merece ser explorado em qualquer passeio pela capital catalã.</p>
+        </div>
+    </section>
+
+    <section class="tokyo-page" style="display: none;">
+        <div class="img-banner">
+            <img src="assets/209.jpg" alt="">
         </div>
     </section>
 
