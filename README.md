@@ -61,6 +61,14 @@ A travel APP/WebSite developped by João Victor "4rauj6" Araújo. Featuring Will
   </li>
 </ul>
 
+[04/05/2026 && 05/05/2026]
+
+<ul>
+  <p>(04/05/2026) - New features has been started to be developed</p>
+  <p>(05/05/2026) - The Script.js file has been improved. Now it has a few new lines of code and an better optmiazation.</p>
+  <p>(05/05/2026) - New function has been added to the script.js file; Now it has a better DOM manipulation, to encrease the user experience.</p>
+</ul>
+
 # DISCLAIMER
 
 <strong><p>About the aplication</p></strong>
