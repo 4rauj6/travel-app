@@ -5,9 +5,13 @@ A travel APP/WebSite developped by João Victor "4rauj6" Araújo. Featuring Will
 <ul>
   <li>
     <p>(04/05/2026) - New features has been started to be developed</p>
-    <p>(05/05/2026) - The Script.js file has been improved. Now it has a few new lines of code and an better optmiazation.</p>
-    <p>(05/05/2026) - New functions has been added to the script.js file; Now it has a better DOM manipulation, to encrease the user experience.</p>
   </li>
+    <li>
+      <p>(05/05/2026) - The Script.js file has been improved. Now it has a few new lines of code and an better optmiazation.</p>
+    </li>
+    <li>
+      <p>(05/05/2026) - New functions has been added to the script.js file; Now it has a better DOM manipulation, to encrease the user experience.</p>
+    </li>
 </ul>
 
 # CHANGELOG
@@ -65,10 +69,14 @@ A travel APP/WebSite developped by João Victor "4rauj6" Araújo. Featuring Will
 
 <ul>
   <li>
-      <p>(04/05/2026) - New features has been started to be developed</p>
-      <p>(05/05/2026) - The Script.js file has been improved. Now it has a few new lines of code and an better optmiazation.</p>
-      <p>(05/05/2026) - New function has been added to the script.js file; Now it has a better DOM manipulation, to encrease the user experience.</p>
+    <p> New features has been started to be developed</p>
   </li>
+    <li>
+      <p>The Script.js file has been improved. Now it has a few new lines of code and an better optmiazation.</p>
+    </li>
+    <li>
+      <p>New functions has been added to the script.js file; Now it has a better DOM manipulation, to encrease the user experience.</p>
+    </li>
 </ul>
 
 # DISCLAIMER
