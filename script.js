@@ -1,6 +1,9 @@
 function showMore() {
   const gotToHomeDiv = document.getElementById("locais-mais-escolhidos");
-  gotToHomeDiv.scrollIntoView({ behavior: "smooth" });
+  gotToHomeDiv.scrollIntoView({ 
+    behavior: "smooth",
+    block: "start"
+  });
 }
 
 function openSidebar() {
@@ -81,8 +84,29 @@ function showTokyoPage() {
   window.scrollTo(0, 0);
 }
 
+function showParisPage(){
+  const getTrigger = document.querySelectorAll(
+    ".homepage, .locais-page, .locais-descobrir, .footer-content"
+  );
+  const getPage = document.querySelector(".paris-page");
+
+  if(getPage.style.display === "flex"){
+    getPage.style.display = "none";
+    getTrigger.forEach((section) => {
+      section.style.display = "block";
+    });
+  }else{
+    getPage.style.display = "block";
+    getTrigger.forEach((section) => {
+      section.style.display = "none";
+    })
+  }
+
+  window.scrollTo(0,0);
+}
+
 function closePages() {
-  const pages = document.querySelectorAll(".barcelona-page, .tokyo-page");
+  const pages = document.querySelectorAll(".barcelona-page, .tokyo-page, .paris-page");
   const sections = document.querySelectorAll(
     ".homepage, .locais-page, .locais-descobrir, .footer-content",
   );
@@ -99,12 +123,13 @@ function closePages() {
 let slideStates = {
   "slide-barcelona": 1,
   "slide-tokyo": 1,
-  "slide-munich:": 1
+  "slide-munich:": 1,
+  "slide-paris": 1
 };
 
 showSlides(1, "slide-barcelona");
 showSlides(1, "slide-tokyo");
-showSlides(1, "slide-munich");
+showSlides(1, "slide-paris");
 
 function plusSlides(n, containerId) {
   showSlides((slideStates[containerId] += n), containerId);
@@ -132,4 +157,4 @@ function showSlides(n, containerId) {
 
   slides[slideStates[containerId] - 1].style.display = "block";
   dots[slideStates[containerId] - 1].className += " active";
-}
+};
