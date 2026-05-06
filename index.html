@@ -35,8 +35,20 @@
                 <li><a href="#home" onclick="closePages()">Home</a></li>
                 <li><a href="#locais-mais-escolhidos" onclick="closePages()">Locais</a></li>
                 <li><a href="#locais-para-descobrir" onclick="closePages()">Descobrir</a></li>
-                <li><a href="sobre-o-site" onclick="closePages()">Sobre</a></li>
-                <li><a href="#sorteio" onclick="closePages()">Sorteio</a></li>
+                <li><a href="#sobre-o-site" onclick="closePages()">Sobre</a></li>
+                <li><a onclick="openConfig()" class="configuration" style="cursor: pointer;">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                        <i class="fa fa-chevron-down" aria-hidden="true" style="font-size: 11px;"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-menu-content">
+                            <a onclick="changeTheme()" style="cursor: pointer;">
+                                <i class="fa fa-moon-o" aria-hidden="true"></i>Tema
+                            </a>
+                        </div>
+                    </div>
+
+                </li>
             </ul>
         </nav>
     </header>
@@ -212,7 +224,7 @@
                 e sem duvidas é um endereço que merece ser explorado em qualquer passeio pela capital catalã.</p>
         </div>
 
-        <div class="slideshow-container">
+        <div class="slideshow-container" id="slide-barcelona">
             <div class="slide-container-title">
                 <h1>Mais fotos de: <a onclick="showBarcelonaPage()">Barclona</a></h1>
             </div>
@@ -235,13 +247,13 @@
                 <div class="text">Caption Three</div>
             </div>
 
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
+            <a class="prev" onclick="plusSlides(-1, 'slide-barcelona')">❮</a>
+            <a class="next" onclick="plusSlides(1, 'slide-barcelona')">❯</a>
 
             <div style="text-align:center" class="dot-container">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(1, 'slide-barcelona')"></span>
+                <span class="dot" onclick="currentSlide(2, 'slide-barcelona')"></span>
+                <span class="dot" onclick="currentSlide(3, 'slide-barcelona')"></span>
             </div>
         </div>
     </section>
@@ -249,6 +261,51 @@
     <section class="tokyo-page" style="display: none;">
         <div class="img-banner">
             <img src="assets/209.jpg" alt="">
+        </div>
+
+        <div class="tokyo-page-text">
+            <h1>Tóquio, Japão</h1>
+            <p>
+                A capital da terra do sol nascente, lar dos animes, jogos e dos mangás é sem dúvidas um dos destino mais
+                famosos e procurados entre muitos viajantes que procuram um local divertido e prazeroso para uma viagem
+                solo (ou à família). Dentre os pontos turisticos que merecem destaque estão: o Museu Nacional de Tóquio,
+                Museu Metropolitano de Artes de Tóquio. Entretanto, não só de museus vive a cidade de Tóquio. Sendo
+                casas de uma das culinárias mais conceituadas do mundo, o sushi, o karé, o sobá, o oden e o ramen (que é
+                uma junção de vários ingredientes presentes no sobá e no oden)
+            </p>
+        </div>
+
+        <div class="slideshow-container" id="slide-tokyo">
+            <div class="slide-container-title">
+                <h1>Mais fotos de: Tóquio</h1>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="assets/209.jpg" class="mySlides-img">
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="assets/209.jpg" class="mySlides-img">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="assets/209.jpg" class="mySlides-img">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 'slide-tokyo')">❮</a>
+            <a class="next" onclick="plusSlides(1, 'slide-tokyo')">❯</a>
+
+            <div style="text-align:center" class="dot-container">
+                <span class="dot" onclick="currentSlide(1, 'slide-tokyo')"></span>
+                <span class="dot" onclick="currentSlide(2, 'slide-tokyo')"></span>
+                <span class="dot" onclick="currentSlide(3, 'slide-tokyo')"></span>
+            </div>
         </div>
     </section>
 

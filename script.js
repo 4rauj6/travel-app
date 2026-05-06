@@ -16,9 +16,32 @@ function openSidebar() {
   sidebarMenuButton.classList.toggle("fa-times");
 }
 
+function openConfig() {
+  const getDropdownMenu = document.querySelector('.dropdown-menu');
+  const aLinkIcons = document.querySelector('.fa-chevron-down, .fa-times, .fa-chevron-up');
+
+  if (getDropdownMenu.style.display === "block") {
+    getDropdownMenu.style.display = "none";
+  } else {
+    getDropdownMenu.style.display = "block";
+  }
+
+
+  if (aLinkIcons) {
+    aLinkIcons.classList.toggle("fa-chevron-down");
+    aLinkIcons.classList.toggle("fa-chevron-up");
+  }
+}
+
+
+function changeTheme() {
+  let darkModeToggle = document.body;
+  darkModeToggle.classList.toggle("dark-mode");
+}
+
 function showBarcelonaPage() {
   const getTrigger = document.querySelectorAll(
-    ".homepage, .locais-page, .locais-descobrir, .footer-content",
+    ".homepage, .locais-page, .locais-descobrir, .footer-content"
   );
   const getPage = document.querySelector(".barcelona-page");
 
@@ -33,11 +56,13 @@ function showBarcelonaPage() {
       section.style.display = "none";
     });
   }
+
+  window.scrollTo(0, 0);
 }
 
 function showTokyoPage() {
   const getTrigger = document.querySelectorAll(
-    ".homepage, .locais-page, .locais-descobrir, .foot-content",
+    ".homepage, .locais-page, .locais-descobrir, .footer-content"
   );
   const getPage = document.querySelector(".tokyo-page");
 
@@ -52,6 +77,8 @@ function showTokyoPage() {
       section.style.display = "none";
     });
   }
+
+  window.scrollTo(0, 0);
 }
 
 function closePages() {
@@ -69,33 +96,40 @@ function closePages() {
   });
 }
 
-let slideIndex = 1;
-showSlides(slideIndex);
+let slideStates = {
+  "slide-barcelona": 1,
+  "slide-tokyo": 1,
+  "slide-munich:": 1
+};
 
-function plusSlides(n) {
-  showSlides((slideIndex += n));
+showSlides(1, "slide-barcelona");
+showSlides(1, "slide-tokyo");
+showSlides(1, "slide-munich");
+
+function plusSlides(n, containerId) {
+  showSlides((slideStates[containerId] += n), containerId);
 }
 
-function currentSlide(n) {
-  showSlides((slideIndex = n));
+function currentSlide(n, containerId) {
+  showSlides((slideStates[containerId] = n), containerId);
 }
 
-function showSlides(n) {
+function showSlides(n, containerId) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
+  let container = document.getElementById(containerId);
+  let slides = container.getElementsByClassName("mySlides");
+  let dots = container.getElementsByClassName("dot");
+
+  if (n > slides.length) { slideStates[containerId] = 1; }
+  if (n < 1) { slideStates[containerId] = slides.length; }
+
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
+
+  slides[slideStates[containerId] - 1].style.display = "block";
+  dots[slideStates[containerId] - 1].className += " active";
 }
