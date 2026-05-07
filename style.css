@@ -563,7 +563,6 @@ section,
   .sidebar button:hover{
     color: rgb(225, 223, 223);
     transition: 0.3s ease-in-out;
-
   }
 
   .navbar {

@@ -22,11 +22,22 @@
                 <i class="fa fa-bars"></i>
             </button>
             <ul id="sidebar-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#locais-mais-escolhidos">Locais</a></li>
-                <li><a href="#locais-para-descobrir">Descobrir</a></li>
-                <li><a href="sobre-o-site">Sobre</a></li>
-                <li><a href="#sorteio">Sorteio</a></li>
+                <li><a href="#home" onclick="closePages()">Home</a></li>
+                <li><a href="#locais-mais-escolhidos" onclick="closePages()">Locais</a></li>
+                <li><a href="#locais-para-descobrir" onclick="closePages()">Descobrir</a></li>
+                <li><a href="#sobre-o-site" onclick="closePages()">Sobre</a></li>
+                <li><a onclick="openConfig()" class="configuration" style="cursor: pointer;">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                        <i class="fa fa-chevron-down" aria-hidden="true" style="font-size: 11px;"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-menu-content">
+                            <a onclick="changeTheme()" style="cursor: pointer;">
+                                <i class="fa fa-moon-o" aria-hidden="true"></i>Tema
+                            </a>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </nav>
 
@@ -47,7 +58,6 @@
                             </a>
                         </div>
                     </div>
-
                 </li>
             </ul>
         </nav>
