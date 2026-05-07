@@ -19,16 +19,18 @@ function openSidebar() {
   sidebarMenuButton.classList.toggle("fa-times");
 }
 
-function openConfig() {
-  const getDropdownMenu = document.querySelector('.dropdown-menu');
+function openConfig(navegationElement) {
+  const getDropdownMenu = navegationElement.parentElement.querySelector('.dropdown-menu, .dropdown-menu-sidebar');
+  const getDropdownMenuContent = getDropdownMenu.querySelector('.dropdown-menu-content');
   const aLinkIcons = document.querySelector('.fa-chevron-down, .fa-times, .fa-chevron-up');
 
-  if (getDropdownMenu.style.display === "block") {
+  if (getDropdownMenu.style.display === "block" || getDropdownMenuContent.style.display === "block") {
     getDropdownMenu.style.display = "none";
+    getDropdownMenuContent.style.display = "none";
   } else {
     getDropdownMenu.style.display = "block";
+    getDropdownMenuContent.style.display = "block";
   }
-
 
   if (aLinkIcons) {
     aLinkIcons.classList.toggle("fa-chevron-down");
@@ -36,23 +38,22 @@ function openConfig() {
   }
 }
 
-
 function changeTheme() {
   let darkModeToggle = document.body;
   darkModeToggle.classList.toggle("dark-mode");
 }
 
-function showPlacesPage(placeNameId){
+function showPlacesPage(placeNameId) {
   const sectionsToHide = document.querySelectorAll(".homepage, .locais-page, .locais-descobrir, .footer-content");
   const targetPlaceState = document.querySelector(`.${placeNameId}-page`);
   const pageVisible = targetPlaceState.style.display === "block" || targetPlaceState.style.display === "flex";
 
-  if(pageVisible){
+  if (pageVisible) {
     targetPlaceState.style.display = "none";
     sectionsToHide.forEach(hideTheSections => {
       hideTheSections.style.display = "block";
     });
-  }else{
+  } else {
     closePages();
     targetPlaceState.style.display = "block";
     sectionsToHide.forEach(hideTheSections => {
@@ -60,7 +61,7 @@ function showPlacesPage(placeNameId){
     });
   }
 
-  window.scrollTo(0,0);
+  window.scrollTo(0, 0);
 }
 
 function closePages() {
