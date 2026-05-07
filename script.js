@@ -1,6 +1,6 @@
 function showMore() {
   const gotToHomeDiv = document.getElementById("locais-mais-escolhidos");
-  gotToHomeDiv.scrollIntoView({ 
+  gotToHomeDiv.scrollIntoView({
     behavior: "smooth",
     block: "start"
   });
@@ -42,71 +42,29 @@ function changeTheme() {
   darkModeToggle.classList.toggle("dark-mode");
 }
 
-function showBarcelonaPage() {
-  const getTrigger = document.querySelectorAll(
-    ".homepage, .locais-page, .locais-descobrir, .footer-content"
-  );
-  const getPage = document.querySelector(".barcelona-page");
+function showPlacesPage(placeNameId){
+  const sectionsToHide = document.querySelectorAll(".homepage, .locais-page, .locais-descobrir, .footer-content");
+  const targetPlaceState = document.querySelector(`.${placeNameId}-page`);
+  const pageVisible = targetPlaceState.style.display === "block" || targetPlaceState.style.display === "flex";
 
-  if (getPage.style.display === "flex") {
-    getPage.style.display = "none";
-    getTrigger.forEach((section) => {
-      section.style.display = "block";
-    });
-  } else {
-    getPage.style.display = "block";
-    getTrigger.forEach((section) => {
-      section.style.display = "none";
-    });
-  }
-
-  window.scrollTo(0, 0);
-}
-
-function showTokyoPage() {
-  const getTrigger = document.querySelectorAll(
-    ".homepage, .locais-page, .locais-descobrir, .footer-content"
-  );
-  const getPage = document.querySelector(".tokyo-page");
-
-  if (getPage.style.display === "flex") {
-    getPage.style.display = "none";
-    getTrigger.forEach((section) => {
-      section.style.display = "block";
-    });
-  } else {
-    getPage.style.display = "block";
-    getTrigger.forEach((section) => {
-      section.style.display = "none";
-    });
-  }
-
-  window.scrollTo(0, 0);
-}
-
-function showParisPage(){
-  const getTrigger = document.querySelectorAll(
-    ".homepage, .locais-page, .locais-descobrir, .footer-content"
-  );
-  const getPage = document.querySelector(".paris-page");
-
-  if(getPage.style.display === "flex"){
-    getPage.style.display = "none";
-    getTrigger.forEach((section) => {
-      section.style.display = "block";
+  if(pageVisible){
+    targetPlaceState.style.display = "none";
+    sectionsToHide.forEach(hideTheSections => {
+      hideTheSections.style.display = "block";
     });
   }else{
-    getPage.style.display = "block";
-    getTrigger.forEach((section) => {
-      section.style.display = "none";
-    })
+    closePages();
+    targetPlaceState.style.display = "block";
+    sectionsToHide.forEach(hideTheSections => {
+      hideTheSections.style.display = "none";
+    });
   }
 
   window.scrollTo(0,0);
 }
 
 function closePages() {
-  const pages = document.querySelectorAll(".barcelona-page, .tokyo-page, .paris-page");
+  const pages = document.querySelectorAll("[class$='-page']");
   const sections = document.querySelectorAll(
     ".homepage, .locais-page, .locais-descobrir, .footer-content",
   );
@@ -123,13 +81,18 @@ function closePages() {
 let slideStates = {
   "slide-barcelona": 1,
   "slide-tokyo": 1,
-  "slide-munich:": 1,
-  "slide-paris": 1
+  "slide-paris": 1,
+  "slide-rio": 1,
+  "slide-rome": 1,
+  "slide-munich": 1
 };
 
 showSlides(1, "slide-barcelona");
 showSlides(1, "slide-tokyo");
 showSlides(1, "slide-paris");
+showSlides(1, "slide-rio");
+showSlides(1, "slide-rome");
+showSlides(1, "slide-munich");
 
 function plusSlides(n, containerId) {
   showSlides((slideStates[containerId] += n), containerId);
@@ -157,4 +120,8 @@ function showSlides(n, containerId) {
 
   slides[slideStates[containerId] - 1].style.display = "block";
   dots[slideStates[containerId] - 1].className += " active";
+
+  setTimeout(function () {
+    plusSlides(1, containerId);
+  }, 6000);
 };
