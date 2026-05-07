@@ -26,12 +26,12 @@
                 <li><a href="#locais-mais-escolhidos" onclick="closePages()">Locais</a></li>
                 <li><a href="#locais-para-descobrir" onclick="closePages()">Descobrir</a></li>
                 <li><a href="#sobre-o-site" onclick="closePages()">Sobre</a></li>
-                <li><a onclick="openConfig()" class="configuration" style="cursor: pointer;">
+                <li><a onclick="openConfig(this)" class="configuration" style="cursor: pointer;">
                         <i class="fa fa-cog" aria-hidden="true"></i>
                         <i class="fa fa-chevron-down" aria-hidden="true" style="font-size: 11px;"></i>
                     </a>
-                    <div class="dropdown-menu">
-                        <div class="dropdown-menu-content">
+                    <div class="dropdown-menu-sidebar">
+                        <div class="dropdown-menu-content" style="display: none;">
                             <a onclick="changeTheme()" style="cursor: pointer;">
                                 <i class="fa fa-moon-o" aria-hidden="true"></i>Tema
                             </a>
@@ -47,7 +47,7 @@
                 <li><a href="#locais-mais-escolhidos" onclick="closePages()">Locais</a></li>
                 <li><a href="#locais-para-descobrir" onclick="closePages()">Descobrir</a></li>
                 <li><a href="#sobre-o-site" onclick="closePages()">Sobre</a></li>
-                <li><a onclick="openConfig()" class="configuration" style="cursor: pointer;">
+                <li><a onclick="openConfig(this)" class="configuration" style="cursor: pointer;">
                         <i class="fa fa-cog" aria-hidden="true"></i>
                         <i class="fa fa-chevron-down" aria-hidden="true" style="font-size: 11px;"></i>
                     </a>
@@ -85,7 +85,7 @@
     <section class="locais-page" id="locais-mais-escolhidos">
         <h1 class="titulo-section">Locais mais escolhidos</h1>
         <div class="locais-container">
-            <div class="locais-card" onclick="showPlacesPage('parris')">
+            <div class="locais-card" onclick="showPlacesPage('paris')">
                 <div class="locais-img">
                     <img src="assets/94787.jpg" alt="">
                 </div>
