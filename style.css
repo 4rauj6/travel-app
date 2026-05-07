@@ -19,6 +19,7 @@ body.dark-mode {
 }
 
 body.dark-mode .navbar,
+body.dark-mode .sidebar,
 body.dark-mode .button-homepage button,
 body.dark-mode .locais-card,
 body.dark-mode .locais-descobrir-card,
@@ -539,11 +540,11 @@ section,
     z-index: 999;
   }
 
-  .sidebar a{
+  .sidebar a {
     color: white;
   }
 
-  .sidebar a:hover{
+  .sidebar a:hover {
     color: rgb(225, 223, 223);
     transition: 0.3s ease-in-out;
     border-radius: 20px;
@@ -560,7 +561,7 @@ section,
     color: white;
   }
 
-  .sidebar button:hover{
+  .sidebar button:hover {
     color: rgb(225, 223, 223);
     transition: 0.3s ease-in-out;
   }
