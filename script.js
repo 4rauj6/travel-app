@@ -8,12 +8,19 @@ function showMore() {
 
 function openSidebar() {
   const openSidebarEvent = document.getElementById("sidebar-list");
+  const sidebarMain = document.querySelector(".sidebar");
   const sidebarMenuButton = document.querySelector(".fa-bars, .fa-times");
 
   if (openSidebarEvent.style.display === "block") {
     openSidebarEvent.style.display = "none";
+    sidebarMain.addEventListener('click', function() {
+      sidebarMain.classList.remove('active');
+    })
   } else {
     openSidebarEvent.style.display = "block";
+    sidebarMain.addEventListener('click', function() {
+      sidebarMain.classList.toggle('active');
+    })
   }
   sidebarMenuButton.classList.toggle("fa-bars");
   sidebarMenuButton.classList.toggle("fa-times");
@@ -124,5 +131,5 @@ function showSlides(n, containerId) {
 
   setTimeout(function () {
     plusSlides(1, containerId);
-  }, 6000);
+  }, 3000);
 };
