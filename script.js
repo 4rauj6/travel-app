@@ -7,21 +7,23 @@ function showMore() {
 }
 
 function openSidebar() {
-  const openSidebarEvent = document.getElementById("sidebar-list");
   const sidebarMain = document.querySelector(".sidebar");
+  const openSidebarEvent = document.getElementById("sidebar-list");
   const sidebarMenuButton = document.querySelector(".fa-bars, .fa-times");
 
-  if (openSidebarEvent.style.display === "block") {
-    openSidebarEvent.style.display = "none";
-    sidebarMain.addEventListener('click', function() {
-      sidebarMain.classList.remove('active');
-    })
+  if (sidebarMain.classList.contains('sidebar-open-anima')) {
+    sidebarMain.classList.remove('sidebar-open-anima');
+    sidebarMain.classList.add('sidebar-close-anima');
+    
+    setTimeout(() => {
+        openSidebarEvent.style.display = "none";
+    }, 300); 
   } else {
     openSidebarEvent.style.display = "block";
-    sidebarMain.addEventListener('click', function() {
-      sidebarMain.classList.toggle('active');
-    })
+    sidebarMain.classList.remove('sidebar-close-anima');
+    sidebarMain.classList.add('sidebar-open-anima');
   }
+
   sidebarMenuButton.classList.toggle("fa-bars");
   sidebarMenuButton.classList.toggle("fa-times");
 }
@@ -29,19 +31,21 @@ function openSidebar() {
 function openConfig(navegationElement) {
   const getDropdownMenu = navegationElement.parentElement.querySelector('.dropdown-menu, .dropdown-menu-sidebar');
   const getDropdownMenuContent = getDropdownMenu.querySelector('.dropdown-menu-content');
-  const aLinkIcons = document.querySelector('.fa-chevron-down, .fa-times, .fa-chevron-up');
 
-  if (getDropdownMenu.style.display === "block" || getDropdownMenuContent.style.display === "block") {
-    getDropdownMenu.style.display = "none";
-    getDropdownMenuContent.style.display = "none";
+  if (getDropdownMenu.style.display === "block" || navegationElement.classList.contains('active-anima')) {
+      getDropdownMenu.style.display = "none";
+      getDropdownMenuContent.style.display = "none";
+      navegationElement.classList.remove('active-anima');
+      navegationElement.classList.add('close-anima');
   } else {
-    getDropdownMenu.style.display = "block";
-    getDropdownMenuContent.style.display = "block";
-  }
-
-  if (aLinkIcons) {
-    aLinkIcons.classList.toggle("fa-chevron-down");
-    aLinkIcons.classList.toggle("fa-chevron-up");
+      getDropdownMenu.style.display = "block";
+      getDropdownMenuContent.style.display = "block";
+      navegationElement.classList.remove('close-anima');
+      navegationElement.classList.add('active-anima');
+      setTimeout(() => {
+        getDropdownMenuContent.style.transition = "opacity 0.3s";
+        getDropdownMenuContent.style.opacity = "1";
+      }, 10)
   }
 }
 
