@@ -528,7 +528,7 @@ section,
     position: fixed;
     top: 0;
     right: 0;
-    width: 15%;
+    width: 20%;
     background-color: orange;
     display: flex;
     flex-direction: column;
@@ -538,7 +538,9 @@ section,
     line-height: 35px;
     border-radius: 30px 0 0 30px;
     z-index: 999;
-    transition:  width 0.3s ease-in-out;
+    height: auto;
+    overflow: hidden;
+    max-height: 400px;
   }
 
   .sidebar a {
@@ -567,8 +569,65 @@ section,
     transition: 0.3s ease-in-out;
   }
 
-  .sidebar.active{
-    width: 50%;
+  @keyframes expandLateral {
+    from { width: 15%; }
+    to { width: 40%; }
+  }
+
+  @keyframes closeLateral {
+    from {width: 40%;}
+    to {width: 15%;}
+  }
+
+  @keyframes expandConfigMode {
+    from { width: 30%; }
+    to { width: 30%; }
+  }
+
+  @keyframes closeConfigMode {
+    from {width: 30%}
+    to {width: 30%;}
+  }
+
+  @keyframes growHeight {
+    from { height: 30px; }
+    to { height: 70px; }
+  }
+
+  @keyframes lowHeight {
+    from {height: 40px;}
+    to {height: 30px;}
+  }
+
+  .sidebar.sidebar-open-anima {
+    animation: expandLateral 0.4s forwards ease-in-out;
+  }
+
+  .sidebar.sidebar-close-anima {
+    animation: closeLateral 0.4s forwards ease-out;
+  }
+
+  .sidebar.config-anima {
+    animation: expandConfigMode 0.4s forwards ease-in-out;
+  }
+
+  .sidebar.sidebar.config-close-anima{
+    animation: closeConfigMode 0.4s forwards ease-in-out;
+  }
+
+  .configuration {
+    display: block;
+    height: 30px; 
+    overflow: hidden;
+  }
+
+  .configuration.active-anima {
+    animation: growHeight 0.2s forwards ease-in-out;
+    overflow: hidden;
+  }
+
+  .configuration.close-anima{
+    animation: lowHeight 0.2s forwards ease-in-out;
   }
 
   .navbar {
@@ -603,6 +662,7 @@ section,
     line-height: 1.8;
     color: white;
   }
+
 
   .homepage-text h3 {
     color: white;
@@ -687,3 +747,4 @@ section,
     line-height: 1px;
   }
 }
+
