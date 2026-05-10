@@ -96,7 +96,9 @@ let slideStates = {
   "slide-paris": 1,
   "slide-rio": 1,
   "slide-rome": 1,
-  "slide-munich": 1
+  "slide-munich": 1,
+  "slide-marselle": 1,
+  "slide-gramado": 1
 };
 
 showSlides(1, "slide-barcelona");
@@ -105,6 +107,8 @@ showSlides(1, "slide-paris");
 showSlides(1, "slide-rio");
 showSlides(1, "slide-rome");
 showSlides(1, "slide-munich");
+showSlides(1, "slide-marselle");
+showSlides(1, "slide-gramado");
 
 function plusSlides(n, containerId) {
   showSlides((slideStates[containerId] += n), containerId);
@@ -137,3 +141,147 @@ function showSlides(n, containerId) {
     plusSlides(1, containerId);
   }, 3000);
 };
+
+const wishlistBtn = document.querySelectorAll('.add-to-wishlist');
+
+
+wishlistBtn.forEach((wishlistBtn) => {
+  let btnAlreadyClicked = false;
+
+  wishlistBtn.addEventListener('click', function (){
+    if(!btnAlreadyClicked){
+      Swal.fire({
+        title: 'Adicionado',
+        titleColor: 'orange',
+        text: 'Esse item foi adicionado com sucesso na sua lista de desejos',
+        icon: 'success'
+      });
+      btnAlreadyClicked = true;
+    } else {
+      Swal.fire({
+        toast: true,
+        position: 'top',
+        title: 'Atenção',
+        text: 'Você já adicionou este item anteriormente.',
+        icon: 'info',
+        showConfirmButton: false,
+        timer: 1000
+      });
+    }
+  });  
+})
+
+const ratingBtn = document.querySelectorAll('.rating-place');
+
+ratingBtn.forEach((ratingBtn) => {
+  let ratBtnAlreadyClicked = false;
+  if (ratingBtn) {
+    ratingBtn.addEventListener('click', function() {
+      if (ratBtnAlreadyClicked) {
+        Swal.fire({
+          toast: true,
+          position: 'top',
+          title: 'Você já enviou sua avaliação!',
+          icon: 'info',
+          showConfirmButton: false,
+          timer: 3000
+        });
+        return; 
+      }
+      
+      const darkModeActive = document.body.classList.contains('dark-mode');
+      
+      Swal.fire({
+        title: 'Avalie sua experiência neste local',
+        background: darkModeActive ? '#2d2d2d' : '#fff',
+        color: darkModeActive ? '#fff' : '#545454',
+        html: `
+          <div class="rating-container">
+            <input type="radio" id="star1" name="rating" value="1"/><label for="star1">1</label>
+            <input type="radio" id="star2" name="rating" value="2"/><label for="star2">2</label>
+            <input type="radio" id="star3" name="rating" value="3"/><label for="star3">3</label>
+            <input type="radio" id="star4" name="rating" value="4"/><label for="star4">4</label>
+            <input type="radio" id="star5" name="rating" value="5"/><label for="star5">5</label>
+          </div> 
+        `,
+        confirmButtonText: 'Enviar',
+        confirmButtonColor: darkModeActive ? 'orange' : '#3085d6',
+        preConfirm: () => {
+          const ratingCheck = Swal.getPopup().querySelector('input[name="rating"]:checked');
+          if (!ratingCheck) {
+            Swal.showValidationMessage('Por favor, dê uma nota para continuar');
+          }
+          return ratingCheck ? ratingCheck.value : null;
+        }
+      }).then((result) => {
+        if (result.isConfirmed) {
+          ratBtnAlreadyClicked = true;
+  
+          Swal.fire({
+            title: 'Obrigado pelo seu voto!',
+            text: `Sua nota foi: ${result.value} estrelas`,
+            icon: 'success',
+            background: darkModeActive ? '#2d2d2d' : '#fff',
+            color: darkModeActive ? '#fff' : '#545454',
+            confirmButtonColor: darkModeActive ? 'orange' : '#3085d6',
+          });
+        }
+      });
+    });
+  }
+})
+
+const placesDatabase = [
+  {nome: 'Paris', id: 'paris-page'},
+  {nome: 'Rio', id: 'rio-page'},
+  {nome: 'Tokyo', id: 'tokyo-page'},
+  {nome: 'Roma', id: 'rome-page'},
+  {nome: 'Munique', id: 'munich-page'},
+  {nome: 'Gramado', id: 'gramado-page'},
+  {nome: 'Marselle', id: 'marselle-page'},
+  {nome: 'Barcelona', id: 'barcelona-page'}
+];
+const searchInputValue = document.getElementById('query');
+const resultListvalue = document.getElementById('search-results');
+
+searchInputValue.addEventListener('input', (e) => {
+  const allToLowerCase = e.target.value.toLowerCase();
+  resultListvalue.innerHTML = '';
+
+  if (allToLowerCase.length > 0) {
+      const filterSearch = placesDatabase.filter(local => 
+        local.nome.toLowerCase().includes(allToLowerCase)
+    );
+
+    filterSearch.forEach(local => {
+      const newDiv = document.createElement('div');
+      newDiv.classList.add('search-result-value');
+      newDiv.textContent = local.nome;
+
+
+      newDiv.addEventListener('click', () => {
+        goToPage(local.id);
+        searchInputValue.value = '';
+        resultListvalue.innerHTML = '';
+      });
+      resultListvalue.appendChild(newDiv);
+    });
+  }
+});
+
+function goToPage(idFromPages){
+  document.querySelectorAll('section').forEach(secs => {
+    secs.style.display = 'none';
+  });
+
+  const targetView = document.querySelector(`.${idFromPages}`);
+  const footer = document.querySelector('.footer-content');
+
+
+  if(targetView || footer){
+    targetView.style.display = 'block';
+    footer.style.display = 'none';
+  }
+
+  window.scrollTo(0,0);
+}
