@@ -1,5 +1,5 @@
 # travel-app
-A travel APP/WebSite developped by João Victor "4rauj6" Araújo. Featuring William "williamzim" Davisson and Alan "Duck" Kauê.
+A App/Web (POC) developed by João Victor "4rauj6" Araújo. Featuring William "williamzim" Davisson and Alan "Duck" Kauê. This repository has as it's main goal to show the authors habilities in building the Front-End resources on this academic software. 
 
 # NEWEST UPDATES
 <ul>
