@@ -294,8 +294,16 @@ mobileSearchInput.addEventListener('input', (e) => {
 
     mobileFilter.forEach(local => {
       const newDivMobile = document.createElement('div');
-      newDivMobile.add
-    })
+      newDivMobile.classList.add('search-mobile-results');
+      newDivMobile.textContent = local.nome;
+      
+      newDivMobile.addEventListener('click', () => {
+        goToPage(local.id);
+        mobileSearchInput.value = '';
+        mobileResultList.innerHTML = '';
+      });
+      mobileResultList.appendChild(newDivMobile);
+    });
   }
 });
 
