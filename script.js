@@ -269,6 +269,36 @@ searchInputValue.addEventListener('input', (e) => {
   }
 });
 
+const placesDatabaseMobile = [
+  {nome: 'Paris', id: 'paris-page'},
+  {nome: 'Rio', id: 'rio-page'},
+  {nome: 'Tokyo', id: 'tokyo-page'},
+  {nome: 'Roma', id: 'rome-page'},
+  {nome: 'Munique', id: 'munich-page'},
+  {nome: 'Gramado', id: 'gramado-page'},
+  {nome: 'Marselle', id: 'marselle-page'},
+  {nome: 'Barcelona', id: 'barcelona-page'}
+];
+
+const mobileSearchInput = document.getElementById('mobile-sb-query');
+const mobileResultList = document.getElementById('mobile-search-results');
+
+mobileSearchInput.addEventListener('input', (e) => {
+  const allToLowerCase = e.target.value.toLowerCase();
+  mobileResultList.innerHTML = '';
+
+  if(allToLowerCase.length > 0) {
+    const mobileFilter = placesDatabaseMobile.filter(local => 
+      local.nome.toLowerCase().includes(allToLowerCase)
+    );
+
+    mobileFilter.forEach(local => {
+      const newDivMobile = document.createElement('div');
+      newDivMobile.add
+    })
+  }
+});
+
 function goToPage(idFromPages){
   document.querySelectorAll('section').forEach(secs => {
     secs.style.display = 'none';
@@ -278,10 +308,39 @@ function goToPage(idFromPages){
   const footer = document.querySelector('.footer-content');
 
 
-  if(targetView || footer){
+  if(targetView){
     targetView.style.display = 'block';
+  }
+
+  if(footer){
     footer.style.display = 'none';
   }
 
   window.scrollTo(0,0);
+}
+
+
+function openSearchBox(){
+  const inputOnMobile = document.querySelector('.mobile-sb-input');
+  const overlayBoxMobile = document.getElementById('overlay');
+  const container = document.querySelector('.searchbar-mobile');
+
+  inputOnMobile.style.display = 'block';
+  container.classList.add('active');
+  overlayBoxMobile.classList.add('active');  
+  setTimeout(() => inputOnMobile.focus(), 100);
+
+  document.body.style.overflow = 'hidden';
+}
+
+function closeSearchBox() {
+  const inputOnMobile = document.querySelector('.mobile-sb-input');
+  const overlayBoxMobile = document.getElementById('overlay');
+  const container = document.querySelector('.searchbar-mobile');
+
+  inputOnMobile.style.display = 'none';
+  container.classList.remove('active');
+  overlayBoxMobile.classList.remove('active');
+
+  document.body.style.overflow = 'auto';
 }

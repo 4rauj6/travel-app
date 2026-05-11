@@ -644,6 +644,10 @@ body.dark-mode .search-result-value:hover {
   }
 }
 
+.search-trigger{
+  display: none;
+}
+
 @media only screen and (max-width: 300px) {
 
   .prev,
@@ -901,4 +905,34 @@ body.dark-mode .search-result-value:hover {
     object-fit: cover;
     line-height: 1px;
   }
+
+  .searchbar-mobile.active .mobile-sb-input {
+    display: block !important;
+    position: fixed;
+    top: 10px;
+    left: 5%;
+    width: 90%; 
+    height: 70px;
+    z-index: 9999;
+    padding: 0 15px;
+    font-size: 18px;
+    border: 2px solid orange;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  }
+
+  .search-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9998;
+  }
+  
+  .search-overlay.active {
+    display: block;
+  }
+
 }
