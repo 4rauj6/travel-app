@@ -241,6 +241,7 @@ const placesDatabase = [
   {nome: 'Marselle', id: 'marselle-page'},
   {nome: 'Barcelona', id: 'barcelona-page'}
 ];
+
 const searchInputValue = document.getElementById('query');
 const resultListvalue = document.getElementById('search-results');
 
@@ -294,18 +295,20 @@ mobileSearchInput.addEventListener('input', (e) => {
 
     mobileFilter.forEach(local => {
       const newDivMobile = document.createElement('div');
-      newDivMobile.classList.add('search-mobile-results');
+      newDivMobile.classList.add('search-mobile-item-result');
       newDivMobile.textContent = local.nome;
       
       newDivMobile.addEventListener('click', () => {
         goToPage(local.id);
         mobileSearchInput.value = '';
         mobileResultList.innerHTML = '';
+        if(window.closeSearchBox) closeSearchBox();
       });
       mobileResultList.appendChild(newDivMobile);
     });
   }
 });
+
 
 function goToPage(idFromPages){
   document.querySelectorAll('section').forEach(secs => {
@@ -335,7 +338,8 @@ function openSearchBox(){
 
   inputOnMobile.style.display = 'block';
   container.classList.add('active');
-  overlayBoxMobile.classList.add('active');  
+  overlayBoxMobile.classList.add('active');
+  
   setTimeout(() => inputOnMobile.focus(), 100);
 
   document.body.style.overflow = 'hidden';

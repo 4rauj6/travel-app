@@ -31,18 +31,20 @@
                 <li>
                     <div class="searchbar-mobile">
                         <button class="search-trigger" onclick="openSearchBox()">
-                            <i class="fa fa-search"></i>
+                            <i class="fa fa-search" style="font-size: 20px;"></i>
                         </button>
+                        
+                        <div class="searchbar-box-container-mobile">
+                            <input
+                                id="mobile-sb-query"
+                                class="mobile-sb-input"
+                                type="search"
+                                placeholder="Buscar..."
+                                style="display: none;"
+                            />
 
-                        <input
-                            id="mobile-sb-query"
-                            class="mobile-sb-input"
-                            type="search"
-                            placeholder="Buscar..."
-                            style="display: none;"
-                        />
-
-                        <div id="mobile-search-results" class="mobile-search-results"></div>
+                            <div id="mobile-search-results" class="mobile-search-results"></div>
+                        </div>
                     </div>
                 </li>
                 <li><a onclick="openConfig(this, event)" class="configuration" style="cursor: pointer;">
