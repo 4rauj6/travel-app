@@ -33,15 +33,10 @@
                         <button class="search-trigger" onclick="openSearchBox()">
                             <i class="fa fa-search" style="font-size: 20px;"></i>
                         </button>
-                        
+
                         <div class="searchbar-box-container-mobile">
-                            <input
-                                id="mobile-sb-query"
-                                class="mobile-sb-input"
-                                type="search"
-                                placeholder="Buscar..."
-                                style="display: none;"
-                            />
+                            <input id="mobile-sb-query" class="mobile-sb-input" type="search" placeholder="Buscar..."
+                                style="display: none;" />
 
                             <div id="mobile-search-results" class="mobile-search-results"></div>
                         </div>
@@ -71,20 +66,14 @@
                 <li>
                     <div class="group" style="position: relative;">
                         <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
-                        <g>
-                            <path
-                            d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
-                            ></path>
-                        </g>
+                            <g>
+                                <path
+                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                            </g>
                         </svg>
-                    
-                        <input
-                            id="query"
-                            class="input"
-                            type="search"
-                            placeholder="Search..."
-                            name="searchbar"
-                        />
+
+                        <input id="query" class="input" type="search" placeholder="Search..." name="searchbar" />
                         <div id="search-results" class="search-container"></div>
                     </div>
                 </li>
@@ -143,7 +132,7 @@
                     <img src="assets/32586.jpg" alt="">
                 </div>
                 <h2>Rio de Janeiro, Brasil</h2>
-                <p>A cidade do amor e da luz, famosa por sua arquitetura icônica, arte e cultura vibrante.</p>
+                <p>A cidade abençoada por Deus e bonita por natureza. O lugar onde a natureza e a cultura...</p>
                 <div class="info-adicionais">
                     <span><strong>População:</strong><span> 2,1 milhões.</span></span>
                     <span><strong>Moeda:</strong><span> Euro (€).</span></span>
@@ -155,7 +144,7 @@
                     <img src="assets/209.jpg" alt="">
                 </div>
                 <h2>Tóquio, Japão</h2>
-                <p>A cidade do amor e da luz, famosa por sua arquitetura icônica, arte e cultura vibrante.</p>
+                <p>Inovação e tradição se encontram em um só espaço. As tecnologias e as antigas tradições...</p>
                 <div class="info-adicionais">
                     <span><strong>População:</strong><span> 2,1 milhões.</span></span>
                     <span><strong>Moeda:</strong><span> Euro (€).</span></span>
@@ -167,7 +156,7 @@
                     <img src="assets/3859.jpg" alt="">
                 </div>
                 <h2>Roma, Itália</h2>
-                <p>A cidade do amor e da luz, famosa por sua arquitetura icônica, arte e cultura vibrante.</p>
+                <p>A terra dos coliseus, Roma é um dos destinos mais procurados pelos amantes da história mundial...</p>
                 <div class="info-adicionais">
                     <span><strong>População:</strong><span> 2,1 milhões.</span></span>
                     <span><strong>Moeda:</strong><span> Euro (€).</span></span>
@@ -179,19 +168,19 @@
                     <img src="assets/4439.jpg" alt="">
                 </div>
                 <h2>Munique, Alemanha</h2>
-                <p>A cidade do amor e da luz, famosa por sua arquitetura icônica, arte e cultura vibrante.</p>
+                <p>A capital da Baviera, lar das melhores cervejas do mundo e do Bayern de Munique...</p>
                 <div class="info-adicionais">
                     <span><strong>População:</strong><span> 2,1 milhões.</span></span>
                     <span><strong>Moeda:</strong><span> Euro (€).</span></span>
                 </div>
             </div>
 
-            <div class="locais-card">
+            <div class="locais-card" onclick="showPlacesPage('zurich')">
                 <div class="locais-img">
                     <img src="assets/94787.jpg" alt="">
                 </div>
                 <h2>Zurique, Suiça</h2>
-                <p>A cidade do amor e da luz, famosa por sua arquitetura icônica, arte e cultura vibrante.</p>
+                <p>Zurique é o equilíbrio perfeito entre a sofisticação de um centro financeiro global e o charme...</p>
                 <div class="info-adicionais">
                     <span><strong>População:</strong><span> 2,1 milhões.</span></span>
                     <span><strong>Moeda:</strong><span> Euro (€).</span></span>
@@ -203,19 +192,19 @@
     <section class="locais-descobrir" id="locais-para-descobrir">
         <h1 class="titulo-section-2">Mais locais para descobrir</h1>
 
-        <div class="locais-main-container" onclick="showPlacesPage('gramado')">
-            <div class="locais-descobrir-card">
+        <div class="locais-main-container">
+            <div class="locais-descobrir-card" onclick="showPlacesPage('gramado')">
                 <div class="paises-card-img">
                     <img src="https://minimundo.com.br/wp-content/uploads/2024/12/20240522_125027499_iOS_MOD-1.jpg"
                         alt="">
                 </div>
                 <div class="locais-info">
                     <h2>Gramado, Brasil</h2>
-                    <p>Gramado: O refúgio europeu na Serra Gaúcha, famoso por sua arquitetura alpina, gastronomia
+                    <p>O refúgio europeu na Serra Gaúcha, famoso por sua arquitetura alpina, gastronomia
                         sofisticada e o encanto do Natal Luz.</p>
                     <div class="locais-description">
                         <strong>População:</strong><span> 35 mil habitantes.</span><br>
-                        <strong >Moeda:</strong><span> Real (R$).</span>
+                        <strong>Moeda:</strong><span> Real (R$).</span>
                     </div>
                 </div>
             </div>
@@ -226,11 +215,11 @@
                 </div>
                 <div class="locais-info">
                     <h2>Marselha, França</h2>
-                    <p>Gramado: O refúgio europeu na Serra Gaúcha, famoso por sua arquitetura alpina, gastronomia
-                        sofisticada e o encanto do Natal Luz.</p>
+                    <p> A capital da região de Provença-Alpes-Côte d'Azur, lar do Olympique de Marseille, é um destino
+                        turístico de renome mundial...</p>
                     <div class="locais-description">
                         <strong>População:</strong><span> 35 mil habitantes.</span><br>
-                        <strong >Moeda:</strong><span> Real (R$).</span><br>
+                        <strong>Moeda:</strong><span> Real (R$).</span><br>
                     </div>
                 </div>
 
@@ -242,11 +231,12 @@
                 </div>
                 <div class="locais-info">
                     <h2>Barcelona, Espanha</h2>
-                    <p>Gramado: O refúgio europeu na Serra Gaúcha, famoso por sua arquitetura alpina, gastronomia
-                        sofisticada e o encanto do Natal Luz.</p>
+                    <p> A capital da Catalunha e lar do Barcelona FC oferece uma experiência única e inesquecível para
+                        os seus visitantes. Sem duvidas, Barcelona encanta...
+                    </p>
                     <div class="locais-description">
                         <strong>População:</strong><span> 35 mil habitantes.</span><br>
-                        <strong >Moeda:</strong><span> Real (R$).</span><br>
+                        <strong>Moeda:</strong><span> Real (R$).</span><br>
                     </div>
                 </div>
             </div>
@@ -270,10 +260,10 @@
                 torcedores (e visitantes) dentro da sua estrutura. A ligação da cidade com o clube é algo quase mística
                 e sem duvidas é um endereço que merece ser explorado em qualquer passeio pela capital catalã.</p>
 
-                <div class="button-actions">
-                    <button class="add-to-wishlist">Adc.lista de desejos</button>
-                    <button class="rating-place">Avaliar</button>
-                </div>
+            <div class="button-actions">
+                <button class="add-to-wishlist">Adc.lista de desejos</button>
+                <button class="rating-place">Avaliar</button>
+            </div>
         </div>
 
         <div class="slideshow-container" id="slide-barcelona">
@@ -324,12 +314,12 @@
                 Museu Metropolitano de Artes de Tóquio. Entretanto, não só de museus vive a cidade de Tóquio. Sendo
                 casas de uma das culinárias mais conceituadas do mundo, o sushi, o karé, o sobá, o oden e o ramen (que é
                 uma junção de vários ingredientes presentes no sobá e no oden)
-
-                <div class="button-actions">
-                    <button class="add-to-wishlist">Adc.lista de desejos</button>
-                    <button class="rating-place">Avaliar</button>
-                </div>
             </p>
+
+            <div class="button-actions">
+                <button class="add-to-wishlist">Adc.lista de desejos</button>
+                <button class="rating-place">Avaliar</button>
+            </div>
         </div>
 
         <div class="slideshow-container" id="slide-tokyo">
@@ -383,12 +373,12 @@
                 estádios do mundo, tendo capacidade para abrigar cerca de 48.000 torcedores (e visitantes) dentro da sua
                 estrutura. A ligação da cidade com o clube é algo quase mística e sem duvidas é um endereço que merece
                 ser explorado em qualquer passeio pela capital francesa.
-
-                <div class="button-actions">
-                    <button class="add-to-wishlist">Adc.lista de desejos</button>
-                    <button class="rating-place">Avaliar</button>
-                </div>
             </p>
+
+            <div class="button-actions">
+                <button class="add-to-wishlist">Adc.lista de desejos</button>
+                <button class="rating-place">Avaliar</button>
+            </div>
         </div>
 
         <div class="slideshow-container" id="slide-paris">
@@ -439,12 +429,12 @@
                 Museu Metropolitano de Artes de Tóquio. Entretanto, não só de museus vive a cidade de Tóquio. Sendo
                 casas de uma das culinárias mais conceituadas do mundo, o sushi, o karé, o sobá, o oden e o ramen (que é
                 uma junção de vários ingredientes presentes no sobá e no oden)
-
-                <div class="button-actions">
-                    <button class="add-to-wishlist">Adc.lista de desejos</button>
-                    <button class="rating-place">Avaliar</button>
-                </div>
             </p>
+
+            <div class="button-actions">
+                <button class="add-to-wishlist">Adc.lista de desejos</button>
+                <button class="rating-place">Avaliar</button>
+            </div>
         </div>
 
         <div class="slideshow-container" id="slide-rio">
@@ -497,12 +487,12 @@
                 encantadoras, fontes deslumbrantes e uma culinária deliciosa que inclui pratos tradicionais italianos.
                 Com sua mistura única de história antiga e vida moderna, Roma é um destino imperdível para os amantes de
                 cultura e arte.
-
-                <div class="button-actions">
-                    <button class="add-to-wishlist">Adc.lista de desejos</button>
-                    <button class="rating-place">Avaliar</button>
-                </div>
             </p>
+
+            <div class="button-actions">
+                <button class="add-to-wishlist">Adc.lista de desejos</button>
+                <button class="rating-place">Avaliar</button>
+            </div>
         </div>
 
         <div class="slideshow-container" id="slide-rome">
@@ -556,12 +546,12 @@
                 desfrutar de cerveja tradicional, música ao vivo e uma atmosfera festiva. A cidade também é conhecida
                 por suas praças encantadoras, fontes deslumbrantes e uma culinária deliciosa que inclui pratos
                 tradicionais alemães. Munique é um destino imperdível para os amentes da cultura alemã.
-
-                <div class="button-actions">
-                    <button class="add-to-wishlist">Adc.lista de desejos</button>
-                    <button class="rating-place">Avaliar</button>
-                </div>
             </p>
+
+            <div class="button-actions">
+                <button class="add-to-wishlist">Adc.lista de desejos</button>
+                <button class="rating-place">Avaliar</button>
+            </div>
         </div>
 
         <div class="slideshow-container" id="slide-munich">
@@ -598,29 +588,89 @@
         </div>
     </section>
 
-    <section class="gramado-page" style="display: none">
+    <section class="zurich-page" style="display: none;">
         <div class="img-banner">
             <img src="assets/20928.jpg" alt="">
         </div>
 
         <div class="places-page-text">
-            <h1>Munique, Alemanha</h1>
+            <h1>Zurique, Suiça</h1>
             <p>
-                Quando se fala na Alemanha, se pensa em Munique. A capital da Baviera, lar do Bayern de Munique, é um
-                destino turístico de renome mundial e perfeito para aqueles que buscam um local onde suas raíses
-                ancestrais se encontram com a modernidade. A cidade é famosa por sua rica história, cultura vibrante e
-                arquitetura impressionante, como pode ser visto em seus monumentos antigos, como a Marienplatz, o
-                Palácio de Nymphenburg e a Igreja de São Pedro, que oferecem uma visão fascinante da civilização alemã.
-                Além disso, Munique é o lar de uma das maiores festas do mundo, a Oktoberfest, onde os visitantes podem
-                desfrutar de cerveja tradicional, música ao vivo e uma atmosfera festiva. A cidade também é conhecida
-                por suas praças encantadoras, fontes deslumbrantes e uma culinária deliciosa que inclui pratos
-                tradicionais alemães. Munique é um destino imperdível para os amentes da cultura alemã.
-
-                <div class="button-actions">
-                    <button class="add-to-wishlist">Adc.lista de desejos</button>
-                    <button class="rating-place">Avaliar</button>
-                </div>
+                Zurique é o equilíbrio perfeito entre a sofisticação de um centro financeiro global e o charme de uma
+                cidade europeia histórica. Localizada no coração da Suíça, às margens do cristalino Lago de Zurique e
+                cortada pelo Rio Limmat, a cidade é consistentemente eleita uma das melhores do mundo para se viver.
+                A cidade é famosa por sua qualidade de vida excepcional, segurança, infraestrutura de primeira classe e
+                uma rica cena cultural. Zurique é um centro financeiro global, abrigando a sede de muitos bancos e
+                instituições financeiras, o que contribui para sua prosperidade econômica. Além disso, Zurique é
+                conhecida por sua arquitetura impressionante, que combina o antigo e o moderno, com edifícios históricos
+                ao lado de arranha-céus contemporâneos. A cidade também é um paraíso para os amantes da arte, com uma
+                variedade de museus, galerias e teatros que oferecem uma rica programação cultural. Com sua mistura
+                única de tradição e modernidade. É um destino imperdível para aqueles que buscam uma experiência
+                europeia autêntica e sofisticada.
             </p>
+
+            <div class="button-actions">
+                <button class="add-to-wishlist">Adc.lista de desejos</button>
+                <button class="rating-place">Avaliar</button>
+            </div>
+        </div>
+
+        <div class="slideshow-container" id="slide-zurich">
+            <div class="slide-container-title">
+                <h1>Mais fotos de: Zurique</h1>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="assets/4439.jpg" class="mySlides-img">
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="assets/4439.jpg" class="mySlides-img">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="assets/4439.jpg" class="mySlides-img">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 'slide-zurich')">❮</a>
+            <a class="next" onclick="plusSlides(1, 'slide-zurich')">❯</a>
+
+            <div style="text-align:center" class="dot-container">
+                <span class="dot" onclick="currentSlide(1, 'slide-zurich')"></span>
+                <span class="dot" onclick="currentSlide(2, 'slide-zurich')"></span>
+                <span class="dot" onclick="currentSlide(3, 'slide-zurich')"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="gramado-page" style="display: none;">
+        <div class="img-banner">
+            <img src="assets/20928.jpg" alt="">
+        </div>
+
+        <div class="places-page-text">
+            <h1>Gramado, Brasil</h1>
+            <p>
+                O refúgio europeu na Serra Gaúcha, famoso por sua arquitetura alpina, gastronomia sofisticada e o
+                encanto do Natal Luz. Localizada no sul do Brasil, Gramado é um destino turístico encantador que oferece
+                uma experiência única aos visitantes. A cidade é conhecida por suas ruas charmosas, repletas de lojas de
+                chocolate, cafés aconchegantes e uma atmosfera acolhedora. Durante o Natal, a cidade se transforma em um
+                verdadeiro espetáculo de luzes e decorações, atraindo turistas de todo o mundo para celebrar a magia do
+                Natal Luz. Além disso, Gramado é famosa por sua culinária deliciosa, com destaque para os pratos à base
+                de carne e os tradicionais fondues. Com sua combinação de charme europeu e hospitalidade brasileira,
+                Gramado é um destino imperdível para aqueles que buscam uma experiência única e memorável.
+            </p>
+
+            <div class="button-actions">
+                <button class="add-to-wishlist">Adc.lista de desejos</button>
+                <button class="rating-place">Avaliar</button>
+            </div>
         </div>
 
         <div class="slideshow-container" id="slide-gramado">
@@ -663,28 +713,30 @@
         </div>
 
         <div class="places-page-text">
-            <h1>Munique, Alemanha</h1>
+            <h1>Marselha, França</h1>
             <p>
-                Quando se fala na Alemanha, se pensa em Munique. A capital da Baviera, lar do Bayern de Munique, é um
-                destino turístico de renome mundial e perfeito para aqueles que buscam um local onde suas raíses
-                ancestrais se encontram com a modernidade. A cidade é famosa por sua rica história, cultura vibrante e
-                arquitetura impressionante, como pode ser visto em seus monumentos antigos, como a Marienplatz, o
-                Palácio de Nymphenburg e a Igreja de São Pedro, que oferecem uma visão fascinante da civilização alemã.
-                Além disso, Munique é o lar de uma das maiores festas do mundo, a Oktoberfest, onde os visitantes podem
-                desfrutar de cerveja tradicional, música ao vivo e uma atmosfera festiva. A cidade também é conhecida
-                por suas praças encantadoras, fontes deslumbrantes e uma culinária deliciosa que inclui pratos
-                tradicionais alemães. Munique é um destino imperdível para os amentes da cultura alemã.
-
-                <div class="button-actions">
-                    <button class="add-to-wishlist">Adc.lista de desejos</button>
-                    <button class="rating-place">Avaliar</button>
-                </div>
+                Quando se fala na França, se pensa em Marselha. A capital da região de Provença-Alpes-Côte d'Azur, lar
+                do Olympique de Marseille, é um destino turístico de renome mundial e perfeito para aqueles que
+                buscam um local onde suas raíses ancestrais se encontram com a modernidade. A cidade é famosa por sua
+                rica história, cultura vibrante e arquitetura impressionante, como pode ser visto em seus monumentos
+                antigos, como a Basílica de Notre-Dame de la Garde, o Vieux-Port e o Château d'If, que oferecem uma
+                visão
+                fascinante da civilização francesa. Além disso, Marselha é o lar de uma das maiores festas do mundo, a
+                Fête de la Musique, onde os visitantes podem desfrutar de música ao vivo e uma atmosfera festiva. A
+                cidade também é conhecida por suas praças encantadoras, fontes deslumbrantes e uma culinária deliciosa
+                que inclui pratos tradicionais franceses. Marselha é um destino imperdível para os amantes da cultura
+                francesa.
             </p>
+
+            <div class="button-actions">
+                <button class="add-to-wishlist">Adc.lista de desejos</button>
+                <button class="rating-place">Avaliar</button>
+            </div>
         </div>
 
         <div class="slideshow-container" id="slide-marselle">
             <div class="slide-container-title">
-                <h1>Mais fotos de: <a onclick="showBarcelonaPage()">Barclona</a></h1>
+                <h1>Mais fotos de: Marselha</h1>
             </div>
 
             <div class="mySlides fade">

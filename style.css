@@ -45,7 +45,7 @@ body.dark-mode .locais-card:hover {
   transition: 0.2s ease-in-out;
 }
 
-body.dark-mode .locais-descobrir-card:hover{
+body.dark-mode .locais-descobrir-card:hover {
   border-color: orange;
   transition: 0.3s ease;
   transform: scale(1.04);
@@ -99,13 +99,13 @@ body.dark-mode .swal2-footer {
   color: #eee;
 }
 
-body.dark-mode .swal2-styled.swal2-confirm{
+body.dark-mode .swal2-styled.swal2-confirm {
   background-color: rgb(0, 0, 0) !important;
   color: rgb(255, 255, 255) !important;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-body.dark-mode .swal2-styled.swal2-confirm:hover{
+body.dark-mode .swal2-styled.swal2-confirm:hover {
   background-color: rgb(255, 255, 255) !important;
   color: orange !important;
 }
@@ -167,7 +167,6 @@ section,
   display: none;
 }
 
-/* From Uiverse.io by LightAndy1 */ 
 .group {
   display: flex;
   line-height: 28px;
@@ -225,9 +224,9 @@ section,
   width: 100%;
   background-color: white;
   z-index: 200;
-  border-radius: 0 0 12px 12px; 
-  box-shadow: 0 4px 6px rgba(32, 33, 36, 0.28); 
-  overflow: hidden; 
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 6px rgba(32, 33, 36, 0.28);
+  overflow: hidden;
 }
 
 .search-result-value {
@@ -237,7 +236,7 @@ section,
   cursor: pointer;
   font-size: 15px;
   color: #212121;
-  transition: background-color 0.1s; 
+  transition: background-color 0.1s;
 }
 
 .search-result-value:hover {
@@ -431,7 +430,7 @@ body.dark-mode .search-result-value:hover {
   transition: transform 0.2s ease-in;
 }
 
-.locais-descobrir-card:hover{
+.locais-descobrir-card:hover {
   border-color: rgba(255, 166, 0, 0.374);
   transition: 0.3s ease;
   transform: scale(1.04);
@@ -456,13 +455,13 @@ body.dark-mode .search-result-value:hover {
 .locais-info {
   display: flex;
   justify-content: center;
-  align-items: flex-start; 
+  align-items: flex-start;
   flex-direction: column;
-  text-align: left;       
+  text-align: left;
   padding-left: 20px;
 }
 
-.locais-info h2{
+.locais-info h2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -470,27 +469,27 @@ body.dark-mode .search-result-value:hover {
   font-size: 1.6em;
 }
 
-.locais-info p{
+.locais-info p {
   font-size: 1.2em;
   margin-top: 10px;
 }
 
 .locais-description {
-  display: block;      
-  text-align: left;     
-  line-height: 1.6;     
+  display: block;
+  text-align: left;
+  line-height: 1.6;
   margin-top: 15px;
 }
 
 .locais-description strong {
   color: orange;
-  display: inline;      
-  margin-right: 2px;    
+  display: inline;
+  margin-right: 2px;
 }
 
 .locais-description span {
-  display: inline;      
-  color: inherit; 
+  display: inline;
+  color: inherit;
 }
 
 .img-banner img {
@@ -623,15 +622,15 @@ body.dark-mode .search-result-value:hover {
   width: 100%;
 }
 
-.swal2-styled.swal2-confirm{
+.swal2-styled.swal2-confirm {
   color: rgb(255, 255, 255);
   background-color: orange;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.swal2-styled.swal2-confirm:hover{
+.swal2-styled.swal2-confirm:hover {
   color: orange;
-  background-color: rgb(255, 255, 255); 
+  background-color: rgb(255, 255, 255);
 }
 
 @keyframes fade {
@@ -644,7 +643,7 @@ body.dark-mode .search-result-value:hover {
   }
 }
 
-.search-trigger{
+.search-trigger {
   display: none;
 }
 
@@ -729,33 +728,63 @@ body.dark-mode .search-result-value:hover {
   }
 
   @keyframes expandLateral {
-    from { width: 15%; }
-    to { width: 40%; }
+    from {
+      width: 15%;
+    }
+
+    to {
+      width: 40%;
+    }
   }
 
   @keyframes closeLateral {
-    from {width: 40%;}
-    to {width: 15%;}
+    from {
+      width: 40%;
+    }
+
+    to {
+      width: 15%;
+    }
   }
 
   @keyframes expandConfigMode {
-    from { width: 30%; }
-    to { width: 30%; }
+    from {
+      width: 30%;
+    }
+
+    to {
+      width: 30%;
+    }
   }
 
   @keyframes closeConfigMode {
-    from {width: 30%}
-    to {width: 30%;}
+    from {
+      width: 30%
+    }
+
+    to {
+      width: 30%;
+    }
   }
 
   @keyframes growHeight {
-    from { height: 30px; }
-    to { height: 70px; }
+    from {
+      height: 30px;
+    }
+
+    to {
+      height: 70px;
+    }
   }
 
   @keyframes lowHeight {
-    from {height: 40px;}
-    to {height: 30px;}
+    from {
+      height: 40px;
+    }
+
+    to {
+      height: 30px;
+    }
   }
 
   .sidebar.sidebar-open-anima {
@@ -770,13 +799,13 @@ body.dark-mode .search-result-value:hover {
     animation: expandConfigMode 0.2s forwards ease-in-out;
   }
 
-  .sidebar.sidebar.config-close-anima{
+  .sidebar.sidebar.config-close-anima {
     animation: closeConfigMode 0.2s forwards ease-out;
   }
 
   .configuration {
     display: block;
-    height: 30px; 
+    height: 30px;
     overflow: hidden;
   }
 
@@ -785,7 +814,7 @@ body.dark-mode .search-result-value:hover {
     overflow: hidden;
   }
 
-  .configuration.close-anima{
+  .configuration.close-anima {
     animation: lowHeight 0.2s forwards ease-in-out;
   }
 
@@ -906,7 +935,7 @@ body.dark-mode .search-result-value:hover {
     line-height: 1px;
   }
 
-  .searchbar-box-container-mobile{
+  .searchbar-box-container-mobile {
     display: none;
     position: fixed;
     top: 10px;
@@ -921,21 +950,21 @@ body.dark-mode .search-result-value:hover {
     cursor: pointer;
   }
 
-  .search-mobile-item-result{
+  .search-mobile-item-result {
     height: 45px;
   }
 
-  .search-mobile-item-result:hover{
+  .search-mobile-item-result:hover {
     background-color: orange;
     color: white;
     transition: 0.3s ease-in-out;
   }
 
-  .searchbar-mobile.active .searchbar-box-container-mobile{
+  .searchbar-mobile.active .searchbar-box-container-mobile {
     display: block !important;
   }
 
-  .mobile-sb-input{
+  .mobile-sb-input {
     width: 100%;
     height: 70px;
     border: none;
@@ -954,7 +983,7 @@ body.dark-mode .search-result-value:hover {
     height: 100vh;
     z-index: 998;
   }
-  
+
   .search-overlay.active {
     display: block;
   }
@@ -967,12 +996,12 @@ body.dark-mode .search-result-value:hover {
     background: white;
   }
 
-  #mobile-search-results{
+  #mobile-search-results {
     max-height: 370px;
     line-height: 2.5;
   }
 
-  .fa-search{
+  .fa-search {
     margin-left: 23px;
   }
 

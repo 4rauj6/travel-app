@@ -14,10 +14,10 @@ function openSidebar() {
   if (sidebarMain.classList.contains('sidebar-open-anima')) {
     sidebarMain.classList.remove('sidebar-open-anima');
     sidebarMain.classList.add('sidebar-close-anima');
-    
+
     setTimeout(() => {
-        openSidebarEvent.style.display = "none";
-    }, 300); 
+      openSidebarEvent.style.display = "none";
+    }, 300);
   } else {
     openSidebarEvent.style.display = "block";
     sidebarMain.classList.remove('sidebar-close-anima');
@@ -33,19 +33,19 @@ function openConfig(navegationElement) {
   const getDropdownMenuContent = getDropdownMenu.querySelector('.dropdown-menu-content');
 
   if (getDropdownMenu.style.display === "block" || navegationElement.classList.contains('active-anima')) {
-      getDropdownMenu.style.display = "none";
-      getDropdownMenuContent.style.display = "none";
-      navegationElement.classList.remove('active-anima');
-      navegationElement.classList.add('close-anima');
+    getDropdownMenu.style.display = "none";
+    getDropdownMenuContent.style.display = "none";
+    navegationElement.classList.remove('active-anima');
+    navegationElement.classList.add('close-anima');
   } else {
-      getDropdownMenu.style.display = "block";
-      getDropdownMenuContent.style.display = "block";
-      navegationElement.classList.remove('close-anima');
-      navegationElement.classList.add('active-anima');
-      setTimeout(() => {
-        getDropdownMenuContent.style.transition = "opacity 0.3s";
-        getDropdownMenuContent.style.opacity = "1";
-      }, 10)
+    getDropdownMenu.style.display = "block";
+    getDropdownMenuContent.style.display = "block";
+    navegationElement.classList.remove('close-anima');
+    navegationElement.classList.add('active-anima');
+    setTimeout(() => {
+      getDropdownMenuContent.style.transition = "opacity 0.3s";
+      getDropdownMenuContent.style.opacity = "1";
+    }, 10)
   }
 }
 
@@ -98,7 +98,8 @@ let slideStates = {
   "slide-rome": 1,
   "slide-munich": 1,
   "slide-marselle": 1,
-  "slide-gramado": 1
+  "slide-gramado": 1,
+  "slide-zurich": 1
 };
 
 showSlides(1, "slide-barcelona");
@@ -109,6 +110,7 @@ showSlides(1, "slide-rome");
 showSlides(1, "slide-munich");
 showSlides(1, "slide-marselle");
 showSlides(1, "slide-gramado");
+showSlides(1, "slide-zurich");
 
 function plusSlides(n, containerId) {
   showSlides((slideStates[containerId] += n), containerId);
@@ -137,7 +139,7 @@ function showSlides(n, containerId) {
   slides[slideStates[containerId] - 1].style.display = "block";
   dots[slideStates[containerId] - 1].className += " active";
 
-  setTimeout(function () {
+  setInterval(function () {
     plusSlides(1, containerId);
   }, 3000);
 };
@@ -148,8 +150,8 @@ const wishlistBtn = document.querySelectorAll('.add-to-wishlist');
 wishlistBtn.forEach((wishlistBtn) => {
   let btnAlreadyClicked = false;
 
-  wishlistBtn.addEventListener('click', function (){
-    if(!btnAlreadyClicked){
+  wishlistBtn.addEventListener('click', function () {
+    if (!btnAlreadyClicked) {
       Swal.fire({
         title: 'Adicionado',
         titleColor: 'orange',
@@ -168,7 +170,7 @@ wishlistBtn.forEach((wishlistBtn) => {
         timer: 1000
       });
     }
-  });  
+  });
 })
 
 const ratingBtn = document.querySelectorAll('.rating-place');
@@ -176,7 +178,7 @@ const ratingBtn = document.querySelectorAll('.rating-place');
 ratingBtn.forEach((ratingBtn) => {
   let ratBtnAlreadyClicked = false;
   if (ratingBtn) {
-    ratingBtn.addEventListener('click', function() {
+    ratingBtn.addEventListener('click', function () {
       if (ratBtnAlreadyClicked) {
         Swal.fire({
           toast: true,
@@ -186,11 +188,11 @@ ratingBtn.forEach((ratingBtn) => {
           showConfirmButton: false,
           timer: 3000
         });
-        return; 
+        return;
       }
-      
+
       const darkModeActive = document.body.classList.contains('dark-mode');
-      
+
       Swal.fire({
         title: 'Avalie sua experiência neste local',
         background: darkModeActive ? '#2d2d2d' : '#fff',
@@ -216,7 +218,7 @@ ratingBtn.forEach((ratingBtn) => {
       }).then((result) => {
         if (result.isConfirmed) {
           ratBtnAlreadyClicked = true;
-  
+
           Swal.fire({
             title: 'Obrigado pelo seu voto!',
             text: `Sua nota foi: ${result.value} estrelas`,
@@ -232,14 +234,15 @@ ratingBtn.forEach((ratingBtn) => {
 })
 
 const placesDatabase = [
-  {nome: 'Paris', id: 'paris-page'},
-  {nome: 'Rio', id: 'rio-page'},
-  {nome: 'Tokyo', id: 'tokyo-page'},
-  {nome: 'Roma', id: 'rome-page'},
-  {nome: 'Munique', id: 'munich-page'},
-  {nome: 'Gramado', id: 'gramado-page'},
-  {nome: 'Marselle', id: 'marselle-page'},
-  {nome: 'Barcelona', id: 'barcelona-page'}
+  { nome: 'Paris', id: 'paris-page' },
+  { nome: 'Rio', id: 'rio-page' },
+  { nome: 'Tokyo', id: 'tokyo-page' },
+  { nome: 'Roma', id: 'rome-page' },
+  { nome: 'Munique', id: 'munich-page' },
+  { nome: 'Gramado', id: 'gramado-page' },
+  { nome: 'Marselle', id: 'marselle-page' },
+  { nome: 'Barcelona', id: 'barcelona-page' },
+  { nome: 'Zurique', id: 'zurich-page' }
 ];
 
 const searchInputValue = document.getElementById('query');
@@ -250,8 +253,8 @@ searchInputValue.addEventListener('input', (e) => {
   resultListvalue.innerHTML = '';
 
   if (allToLowerCase.length > 0) {
-      const filterSearch = placesDatabase.filter(local => 
-        local.nome.toLowerCase().includes(allToLowerCase)
+    const filterSearch = placesDatabase.filter(local =>
+      local.nome.toLowerCase().includes(allToLowerCase)
     );
 
     filterSearch.forEach(local => {
@@ -271,14 +274,14 @@ searchInputValue.addEventListener('input', (e) => {
 });
 
 const placesDatabaseMobile = [
-  {nome: 'Paris', id: 'paris-page'},
-  {nome: 'Rio', id: 'rio-page'},
-  {nome: 'Tokyo', id: 'tokyo-page'},
-  {nome: 'Roma', id: 'rome-page'},
-  {nome: 'Munique', id: 'munich-page'},
-  {nome: 'Gramado', id: 'gramado-page'},
-  {nome: 'Marselle', id: 'marselle-page'},
-  {nome: 'Barcelona', id: 'barcelona-page'}
+  { nome: 'Paris', id: 'paris-page' },
+  { nome: 'Rio', id: 'rio-page' },
+  { nome: 'Tokyo', id: 'tokyo-page' },
+  { nome: 'Roma', id: 'rome-page' },
+  { nome: 'Munique', id: 'munich-page' },
+  { nome: 'Gramado', id: 'gramado-page' },
+  { nome: 'Marselle', id: 'marselle-page' },
+  { nome: 'Barcelona', id: 'barcelona-page' }
 ];
 
 const mobileSearchInput = document.getElementById('mobile-sb-query');
@@ -288,8 +291,8 @@ mobileSearchInput.addEventListener('input', (e) => {
   const allToLowerCase = e.target.value.toLowerCase();
   mobileResultList.innerHTML = '';
 
-  if(allToLowerCase.length > 0) {
-    const mobileFilter = placesDatabaseMobile.filter(local => 
+  if (allToLowerCase.length > 0) {
+    const mobileFilter = placesDatabaseMobile.filter(local =>
       local.nome.toLowerCase().includes(allToLowerCase)
     );
 
@@ -297,12 +300,12 @@ mobileSearchInput.addEventListener('input', (e) => {
       const newDivMobile = document.createElement('div');
       newDivMobile.classList.add('search-mobile-item-result');
       newDivMobile.textContent = local.nome;
-      
+
       newDivMobile.addEventListener('click', () => {
         goToPage(local.id);
         mobileSearchInput.value = '';
         mobileResultList.innerHTML = '';
-        if(window.closeSearchBox) closeSearchBox();
+        if (window.closeSearchBox) closeSearchBox();
       });
       mobileResultList.appendChild(newDivMobile);
     });
@@ -310,7 +313,7 @@ mobileSearchInput.addEventListener('input', (e) => {
 });
 
 
-function goToPage(idFromPages){
+function goToPage(idFromPages) {
   document.querySelectorAll('section').forEach(secs => {
     secs.style.display = 'none';
   });
@@ -319,19 +322,19 @@ function goToPage(idFromPages){
   const footer = document.querySelector('.footer-content');
 
 
-  if(targetView){
+  if (targetView) {
     targetView.style.display = 'block';
   }
 
-  if(footer){
+  if (footer) {
     footer.style.display = 'none';
   }
 
-  window.scrollTo(0,0);
+  window.scrollTo(0, 0);
 }
 
 
-function openSearchBox(){
+function openSearchBox() {
   const inputOnMobile = document.querySelector('.mobile-sb-input');
   const overlayBoxMobile = document.getElementById('overlay');
   const container = document.querySelector('.searchbar-mobile');
@@ -339,7 +342,7 @@ function openSearchBox(){
   inputOnMobile.style.display = 'block';
   container.classList.add('active');
   overlayBoxMobile.classList.add('active');
-  
+
   setTimeout(() => inputOnMobile.focus(), 100);
 
   document.body.style.overflow = 'hidden';
